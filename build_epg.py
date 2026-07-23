@@ -44,6 +44,19 @@ def normalize(name):
     return name.lower()
 
 
+def normalize_loose(name):
+    """Like normalize(), but also drops standalone numbers (e.g. channel
+    numbers embedded in call-sign names like 'KTLA 5'). Used only as a
+    last-resort fallback, since dropping digits would break channels like
+    'NPO 1' or 'ESPN 2' if used everywhere."""
+    name = re.sub(r'\|[A-Z]+\|\s*', '', name)
+    name = re.sub(r'\b(HD|4K|8K|4ᴋ|8ᴋ|RAW|ʀᴀᴡ|FHD|UHD|SD|VIP)\b', '', name, flags=re.IGNORECASE)
+    name = re.sub(r'\b\d+\b', '', name)  # standalone numbers
+    name = name.replace('+', 'PLUS')
+    name = re.sub(r'[^a-zA-Z]', '', name)
+    return name.lower()
+
+
 def download_epg(url):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=60) as resp:
@@ -52,12 +65,12 @@ def download_epg(url):
 
 
 def build_playlist_index(channel_list):
-    """norm_name -> tvg_id, deduped by keeping the first occurrence."""
+    """norm_name -> (tvg_id, raw_tvg_name), deduped by keeping the first occurrence."""
     index = {}
     for ch in channel_list:
         norm = normalize(ch["tvg_name"])
         if norm and norm not in index:
-            index[norm] = ch["tvg_id"]
+            index[norm] = (ch["tvg_id"], ch["tvg_name"])
     return index
 
 
@@ -85,12 +98,11 @@ def remap_and_extract_programmes(epg_content, id_map):
 
 
 def process_country(country, urls, playlist_index):
-    remaining = dict(playlist_index)  # norm_name -> tvg_id, shrinks as we match
+    remaining = dict(playlist_index)  # norm_name -> (tvg_id, raw_name), shrinks as we match
     channel_out = []
     programme_out = []
     seen_targets = set()
 
-    # Pass 1: exact normalized-name match, one source at a time, filling gaps
     for url in urls:
         if not remaining:
             break
@@ -103,11 +115,13 @@ def process_country(country, urls, playlist_index):
 
         channels = extract_channels(epg_content)
         print(f"[{country}] {url.rsplit('/', 1)[-1]}: parsed {len(channels)} channel entries from source")
+
+        # Pass 1: exact normalized-name match
         id_map = {}  # epg_id -> target tvg_id, for this source only
         for block, epg_id, disp in channels:
             norm = normalize(disp)
             if norm in remaining:
-                target = remaining[norm]
+                target, _raw = remaining[norm]
                 if target not in seen_targets:
                     id_map[epg_id] = target
                     seen_targets.add(target)
@@ -119,20 +133,19 @@ def process_country(country, urls, playlist_index):
         print(f"[{country}] {url.rsplit('/', 1)[-1]}: +{matched_this_source} channels "
               f"({len(remaining)} still unmatched)")
 
-        # Pass 2 (fuzzy fallback): for names that didn't match exactly, try
-        # close matches against whatever's left unmatched after this source.
+        # Pass 2 (fuzzy fallback): close matches on the full normalized name
         if remaining:
             fuzzy_id_map = {}
             unmatched_norms = list(remaining.keys())
             for block, epg_id, disp in channels:
                 if epg_id in id_map:
-                    continue  # already used above
+                    continue
                 norm = normalize(disp)
                 if not norm:
                     continue
                 best = difflib.get_close_matches(norm, unmatched_norms, n=1, cutoff=FUZZY_THRESHOLD)
                 if best:
-                    target = remaining[best[0]]
+                    target, _raw = remaining[best[0]]
                     if target not in seen_targets:
                         fuzzy_id_map[epg_id] = target
                         seen_targets.add(target)
@@ -144,23 +157,18 @@ def process_country(country, urls, playlist_index):
                 print(f"[{country}] {url.rsplit('/', 1)[-1]}: +{len(fuzzy_id_map)} more via fuzzy match "
                       f"({len(remaining)} still unmatched)")
 
-        # Pass 3 (substring fallback): catches cases like playlist "WCBS"
-        # matching an EPG display name like "WCBS New York (CBS)" — names
-        # that contain the target as a chunk but aren't textually similar
-        # enough for the fuzzy pass above. Guarded by a minimum length to
-        # avoid short/ambiguous names matching too broadly.
+        # Pass 3 (substring fallback): catches e.g. playlist "WCBS" matching
+        # an EPG display name like "WCBS New York (CBS)".
         if remaining:
             substring_id_map = {}
             for block, epg_id, disp in channels:
-                if epg_id in id_map:
+                if epg_id in id_map or epg_id in substring_id_map:
                     continue
                 norm_disp = normalize(disp)
                 if not norm_disp:
                     continue
-                for norm_name, target in list(remaining.items()):
-                    if len(norm_name) < 4:
-                        continue  # too short, too likely to false-match
-                    if target in seen_targets:
+                for norm_name, (target, _raw) in list(remaining.items()):
+                    if len(norm_name) < 4 or target in seen_targets:
                         continue
                     if norm_name in norm_disp:
                         substring_id_map[epg_id] = target
@@ -173,10 +181,39 @@ def process_country(country, urls, playlist_index):
                 print(f"[{country}] {url.rsplit('/', 1)[-1]}: +{len(substring_id_map)} more via substring match "
                       f"({len(remaining)} still unmatched)")
 
+        # Pass 4 (loose substring fallback): re-normalizes both sides from
+        # the ORIGINAL raw text with standalone numbers stripped too.
+        # Catches call-sign-style names like "KTLA 5" where the embedded
+        # channel number breaks a straight substring match.
+        if remaining:
+            loose_id_map = {}
+            for block, epg_id, disp in channels:
+                if epg_id in id_map or epg_id in loose_id_map:
+                    continue
+                loose_disp = normalize_loose(disp)
+                if not loose_disp:
+                    continue
+                for norm_name, (target, raw_name) in list(remaining.items()):
+                    if target in seen_targets:
+                        continue
+                    loose_name = normalize_loose(raw_name)
+                    if len(loose_name) < 4:
+                        continue
+                    if loose_name in loose_disp:
+                        loose_id_map[epg_id] = target
+                        seen_targets.add(target)
+                        channel_out.append(block.replace(f'id="{epg_id}"', f'id="{target}"', 1))
+                        del remaining[norm_name]
+                        break
+            if loose_id_map:
+                programme_out.extend(remap_and_extract_programmes(epg_content, loose_id_map))
+                print(f"[{country}] {url.rsplit('/', 1)[-1]}: +{len(loose_id_map)} more via loose substring match "
+                      f"({len(remaining)} still unmatched)")
+
     total_matched = len(playlist_index) - len(remaining)
     print(f"[{country}] TOTAL: {total_matched} of {len(playlist_index)} playlist channels matched")
     if remaining:
-        sample = list(remaining.values())[:15]
+        sample = [f"{tvg_id} ({raw_name.strip()})" for tvg_id, raw_name in list(remaining.values())[:15]]
         print(f"[{country}] still unmatched (sample of {len(remaining)}): {sample}")
 
     return channel_out, programme_out
