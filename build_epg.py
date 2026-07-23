@@ -27,7 +27,6 @@ SOURCES = {
     ],
     "USA": [
         "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz",
-        "https://epgshare01.online/epgshare01/epg_ripper_US_SPORTS1.xml.gz",
         "https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz",
     ],
 }
@@ -63,6 +62,24 @@ def tokenize(name):
     words = re.findall(r'[a-zA-Z]+', name)
     stop = {'hd', 'sd', 'uhd', 'fhd', 'tv', 'channel', 'network', 'the', 'and'}
     return [w.lower() for w in words if w.lower() not in stop and len(w) > 1]
+
+
+CALLSIGN_PAREN_RE = re.compile(r'\(([A-Z]{3,5})\)')
+CALLSIGN_PREFIX_RE = re.compile(r'^([A-Z]{3,5})\s+\d')
+
+
+def extract_callsign(raw_name):
+    """Pulls a US broadcast call sign out of a channel name, e.g.
+    'UNIMAS 17 (KNIC) SAN ANTONIO' -> 'KNIC', or 'KTLA 5 HD (LOS ANGELES)'
+    -> 'KTLA'. Returns None if no confident call sign is found."""
+    name = re.sub(r'\|[A-Z]+\|\s*', '', raw_name).strip()
+    m = CALLSIGN_PAREN_RE.search(name)
+    if m:
+        return m.group(1)
+    m = CALLSIGN_PREFIX_RE.match(name)
+    if m:
+        return m.group(1)
+    return None
 
 
 def download_epg(url):
@@ -251,6 +268,41 @@ def process_country(country, urls, playlist_index):
             if token_id_map:
                 programme_out.extend(remap_and_extract_programmes(epg_content, token_id_map))
                 print(f"[{country}] {url.rsplit('/', 1)[-1]}: +{len(token_id_map)} more via token match "
+                      f"({len(remaining)} still unmatched)")
+
+        # Pass 6 (call-sign fallback, US-specific but harmless elsewhere):
+        # matches bare call-sign EPG entries like "WKEF-DT" against playlist
+        # names that embed the call sign, e.g. "KTLA 5 (LOS ANGELES)" or
+        # "UNIMAS 17 (KNIC) SAN ANTONIO".
+        if remaining:
+            callsign_id_map = {}
+            # Precompute call signs for what's left unmatched
+            remaining_callsigns = {}
+            for norm_name, (target, raw_name) in remaining.items():
+                cs = extract_callsign(raw_name)
+                if cs:
+                    remaining_callsigns.setdefault(cs, []).append(norm_name)
+
+            if remaining_callsigns:
+                for block, epg_id, disp in channels:
+                    if epg_id in id_map or epg_id in callsign_id_map:
+                        continue
+                    epg_callsign = re.split(r'[-\s]', disp.strip())[0].upper()
+                    if epg_callsign in remaining_callsigns:
+                        for norm_name in remaining_callsigns[epg_callsign]:
+                            if norm_name not in remaining:
+                                continue
+                            target, _raw = remaining[norm_name]
+                            if target in seen_targets:
+                                continue
+                            callsign_id_map[epg_id] = target
+                            seen_targets.add(target)
+                            channel_out.append(block.replace(f'id="{epg_id}"', f'id="{target}"', 1))
+                            del remaining[norm_name]
+                            break
+            if callsign_id_map:
+                programme_out.extend(remap_and_extract_programmes(epg_content, callsign_id_map))
+                print(f"[{country}] {url.rsplit('/', 1)[-1]}: +{len(callsign_id_map)} more via call-sign match "
                       f"({len(remaining)} still unmatched)")
 
     total_matched = len(playlist_index) - len(remaining)
