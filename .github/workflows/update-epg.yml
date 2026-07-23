@@ -1,0 +1,33 @@
+name: Update EPG
+
+on:
+  schedule:
+    # Runs daily at 05:00 UTC (~07:00 Netherlands time). Adjust as you like.
+    - cron: '0 5 * * *'
+  workflow_dispatch: {}  # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build EPG
+        run: python3 build_epg.py
+
+      - name: Commit updated EPG file
+        run: |
+          git config user.name "epg-bot"
+          git config user.email "epg-bot@users.noreply.github.com"
+          git add combined_epg.xml
+          git diff --quiet --cached || git commit -m "Auto-update EPG $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
