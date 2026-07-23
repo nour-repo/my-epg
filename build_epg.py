@@ -57,6 +57,14 @@ def normalize_loose(name):
     return name.lower()
 
 
+def tokenize(name):
+    """Splits into lowercase word tokens, dropping short/noise words."""
+    name = re.sub(r'\|[A-Z]+\|\s*', '', name)
+    words = re.findall(r'[a-zA-Z]+', name)
+    stop = {'hd', 'sd', 'uhd', 'fhd', 'tv', 'channel', 'network', 'the', 'and'}
+    return [w.lower() for w in words if w.lower() not in stop and len(w) > 1]
+
+
 def download_epg(url):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=60) as resp:
@@ -208,6 +216,38 @@ def process_country(country, urls, playlist_index):
             if loose_id_map:
                 programme_out.extend(remap_and_extract_programmes(epg_content, loose_id_map))
                 print(f"[{country}] {url.rsplit('/', 1)[-1]}: +{len(loose_id_map)} more via loose substring match "
+                      f"({len(remaining)} still unmatched)")
+
+        # Pass 5 (token-set fallback): catches names with extra words
+        # inserted in the MIDDLE, which no substring check can match, e.g.
+        # playlist "KTLA (Los Angeles)" vs EPG "KTLA (The CW) Los Angeles,
+        # CA" — "the cw" splits "ktla" from "losangeles". Requires every
+        # significant playlist word-token to appear somewhere in the EPG
+        # name's tokens, with a minimum token count to avoid one-word
+        # channels matching too broadly.
+        if remaining:
+            token_id_map = {}
+            for block, epg_id, disp in channels:
+                if epg_id in id_map or epg_id in token_id_map:
+                    continue
+                disp_tokens = set(tokenize(disp))
+                if not disp_tokens:
+                    continue
+                for norm_name, (target, raw_name) in list(remaining.items()):
+                    if target in seen_targets:
+                        continue
+                    name_tokens = tokenize(raw_name)
+                    if len(name_tokens) < 2:
+                        continue  # single-word names are too ambiguous for token matching
+                    if all(tok in disp_tokens for tok in name_tokens):
+                        token_id_map[epg_id] = target
+                        seen_targets.add(target)
+                        channel_out.append(block.replace(f'id="{epg_id}"', f'id="{target}"', 1))
+                        del remaining[norm_name]
+                        break
+            if token_id_map:
+                programme_out.extend(remap_and_extract_programmes(epg_content, token_id_map))
+                print(f"[{country}] {url.rsplit('/', 1)[-1]}: +{len(token_id_map)} more via token match "
                       f"({len(remaining)} still unmatched)")
 
     total_matched = len(playlist_index) - len(remaining)
