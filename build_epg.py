@@ -123,6 +123,9 @@ def process_country(country, urls, playlist_index):
 
         channels = extract_channels(epg_content)
         print(f"[{country}] {url.rsplit('/', 1)[-1]}: parsed {len(channels)} channel entries from source")
+        if channels:
+            sample_names = [disp for _b, _id, disp in channels[:10]]
+            print(f"[{country}] {url.rsplit('/', 1)[-1]}: sample names: {sample_names}")
 
         # Pass 1: exact normalized-name match
         id_map = {}  # epg_id -> target tvg_id, for this source only
