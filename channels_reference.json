@@ -1,0 +1,3084 @@
+{
+ "NL": [
+  {
+   "tvg_id": "npo1.nl",
+   "tvg_name": "|NL| NPO 1 HD"
+  },
+  {
+   "tvg_id": "npo2.nl",
+   "tvg_name": "|NL| NPO 2 HD"
+  },
+  {
+   "tvg_id": "npo3.nl",
+   "tvg_name": "|NL| NPO 3 HD"
+  },
+  {
+   "tvg_id": "rtl4.nl",
+   "tvg_name": "|NL| RTL 4 HD"
+  },
+  {
+   "tvg_id": "rtl5.nl",
+   "tvg_name": "|NL| RTL 5 HD"
+  },
+  {
+   "tvg_id": "sbs6.nl",
+   "tvg_name": "|NL| SBS 6 HD"
+  },
+  {
+   "tvg_id": "rtl7.nl",
+   "tvg_name": "|NL| RTL 7 HD"
+  },
+  {
+   "tvg_id": "rtl8.nl",
+   "tvg_name": "|NL| RTL 8 HD"
+  },
+  {
+   "tvg_id": "sbs9.nl",
+   "tvg_name": "|NL| VIAPLAY TV HD"
+  },
+  {
+   "tvg_id": "net5.nl",
+   "tvg_name": "|NL| NET 5 HD"
+  },
+  {
+   "tvg_id": "veronicadisneyxd.nl",
+   "tvg_name": "|NL| VERONICA HD / DISNEY XD"
+  },
+  {
+   "tvg_id": "rtlz.nl",
+   "tvg_name": "|NL| RTL Z HD"
+  },
+  {
+   "tvg_id": "npo1extra.nl",
+   "tvg_name": "|NL| NPO EXTRA 1"
+  },
+  {
+   "tvg_id": "npo2extra.nl",
+   "tvg_name": "|NL| NPO EXTRA 2"
+  },
+  {
+   "tvg_id": "npopolitiek.nl",
+   "tvg_name": "|NL| NPO POLITIEK"
+  },
+  {
+   "tvg_id": "comedycentral.nl",
+   "tvg_name": "|NL| COMEDY CENTRAL HD"
+  },
+  {
+   "tvg_id": "comedycentralextra.nl",
+   "tvg_name": "|NL| COMEDY CENTRAL EXTRA"
+  },
+  {
+   "tvg_id": "spike.nl",
+   "tvg_name": "|NL| PARAMOUNT NETWORK HD"
+  },
+  {
+   "tvg_id": "fox.nl",
+   "tvg_name": "|NL| FOX HD"
+  },
+  {
+   "tvg_id": "bvn.nl",
+   "tvg_name": "|NL| BVN"
+  },
+  {
+   "tvg_id": "nickelodeon.nl",
+   "tvg_name": "|NL| NICKELODEON HD"
+  },
+  {
+   "tvg_id": "nicktoons.nl",
+   "tvg_name": "|NL| NICKTOONS"
+  },
+  {
+   "tvg_id": "disneyxd.nl",
+   "tvg_name": "|NL| DISNEY XD"
+  },
+  {
+   "tvg_id": "disneychannel.nl",
+   "tvg_name": "|NL| DISNEY CHANNEL HD"
+  },
+  {
+   "tvg_id": "cartoonnetwork.nl",
+   "tvg_name": "|NL| CARTOON NETWORK"
+  },
+  {
+   "tvg_id": "boomerang.nl",
+   "tvg_name": "|NL| BOOMERANG"
+  },
+  {
+   "tvg_id": "rtltelekids.nl",
+   "tvg_name": "|NL| RTL TELEKIDS HD"
+  },
+  {
+   "tvg_id": "nickjr.nl",
+   "tvg_name": "|NL| NICK JUNIOR"
+  },
+  {
+   "tvg_id": "babytv.nl",
+   "tvg_name": "|NL| BABY TV"
+  },
+  {
+   "tvg_id": "film1action.nl",
+   "tvg_name": "|NL| FILM 1 ACTION HD"
+  },
+  {
+   "tvg_id": "film1premiere.nl",
+   "tvg_name": "|NL| FILM 1 PREMIERE HD"
+  },
+  {
+   "tvg_id": "film1drama.nl",
+   "tvg_name": "|NL| FILM 1 DRAMA HD"
+  },
+  {
+   "tvg_id": "film1family.nl",
+   "tvg_name": "|NL| FILM 1 FAMILY HD"
+  },
+  {
+   "tvg_id": "192tv.nl",
+   "tvg_name": "|NL| 192 TV"
+  },
+  {
+   "tvg_id": "mtv.nl",
+   "tvg_name": "|NL| MTV HD"
+  },
+  {
+   "tvg_id": "dancetrippin.nl",
+   "tvg_name": "|NL| DANCE TRIPPIN HD"
+  },
+  {
+   "tvg_id": "xite.nl",
+   "tvg_name": "|NL| XITE HD"
+  },
+  {
+   "tvg_id": "nickmusic.nl",
+   "tvg_name": "|NL| NICK MUSIC"
+  },
+  {
+   "tvg_id": "tvoranje.nl",
+   "tvg_name": "|NL| TV ORANJE"
+  },
+  {
+   "tvg_id": "rtllounge.nl",
+   "tvg_name": "|NL| RTL LOUNGE HD"
+  },
+  {
+   "tvg_id": "rtlcrime.nl",
+   "tvg_name": "|NL| RTL CRIME HD"
+  },
+  {
+   "tvg_id": "eentertainment.nl",
+   "tvg_name": "|NL| E! HD"
+  },
+  {
+   "tvg_id": "tlc.nl",
+   "tvg_name": "|NL| TLC HD"
+  },
+  {
+   "tvg_id": "fashiontv.nl",
+   "tvg_name": "|NL| FASHION TV HD"
+  },
+  {
+   "tvg_id": "24kitchen.nl",
+   "tvg_name": "|NL| 24 KITCHEN HD"
+  },
+  {
+   "tvg_id": "ons.nl",
+   "tvg_name": "|NL| ONS"
+  },
+  {
+   "tvg_id": "outtv.nl",
+   "tvg_name": "|NL| OUT TV HD"
+  },
+  {
+   "tvg_id": "family7.nl",
+   "tvg_name": "|NL| FAMILY 7 KIDS"
+  },
+  {
+   "tvg_id": "discoverychannel.nl",
+   "tvg_name": "|NL| DISCOVERY HD"
+  },
+  {
+   "tvg_id": "discoveryscience.nl",
+   "tvg_name": "|NL| DISCOVERY SCIENCE HD"
+  },
+  {
+   "tvg_id": "natgeo.nl",
+   "tvg_name": "|NL| NGC HD"
+  },
+  {
+   "tvg_id": "natgeowild.nl",
+   "tvg_name": "|NL| NGC WILD HD"
+  },
+  {
+   "tvg_id": "animalplanet.nl",
+   "tvg_name": "|NL| ANIMAL PLANET HD"
+  },
+  {
+   "tvg_id": "history.nl",
+   "tvg_name": "|NL| HISTORY HD"
+  },
+  {
+   "tvg_id": "ziggosport.nl",
+   "tvg_name": "|NL| ZIGGO SPORT HD"
+  },
+  {
+   "tvg_id": "ziggosportvoetbal.nl",
+   "tvg_name": "|NL| ZIGGO SPORT 2 HD"
+  },
+  {
+   "tvg_id": "ziggosportgolf.nl",
+   "tvg_name": "|NL| ZIGGO SPORT 3 HD"
+  },
+  {
+   "tvg_id": "ziggosportracing.nl",
+   "tvg_name": "|NL| ZIGGO SPORT 4 HD"
+  },
+  {
+   "tvg_id": "ziggosportselect.nl",
+   "tvg_name": "|NL| ZIGGO SPORT 5 HD"
+  },
+  {
+   "tvg_id": "ziggosportselect.nl",
+   "tvg_name": "|NL| ZIGGO SPORT 6 HD"
+  },
+  {
+   "tvg_id": "ziggosportextra1.nl",
+   "tvg_name": "|NL| NPO EXTRA 1 HD"
+  },
+  {
+   "tvg_id": "ziggosportextra2.nl",
+   "tvg_name": "|NL| NPO EXTRA 2 HD"
+  },
+  {
+   "tvg_id": "eurosport1.nl",
+   "tvg_name": "|NL| EUROSPORT 1 HD"
+  },
+  {
+   "tvg_id": "eurosport2.nl",
+   "tvg_name": "|NL| EUROSPORT 2 HD"
+  },
+  {
+   "tvg_id": "espn.nl",
+   "tvg_name": "|NL| ESPN 1 HD"
+  },
+  {
+   "tvg_id": "espn2.nl",
+   "tvg_name": "|NL| ESPN 2 HD"
+  },
+  {
+   "tvg_id": "espn3.nl",
+   "tvg_name": "|NL| ESPN 3 HD"
+  },
+  {
+   "tvg_id": "espn4.nl",
+   "tvg_name": "|NL| ESPN 4 HD"
+  },
+  {
+   "tvg_id": "at5.nl",
+   "tvg_name": "|NL| AT 5"
+  },
+  {
+   "tvg_id": "rtvutrecht.nl",
+   "tvg_name": "|NL| RTV UTRECHT"
+  },
+  {
+   "tvg_id": "l1tv.nl",
+   "tvg_name": "|NL| L1 LIMBURG TV"
+  },
+  {
+   "tvg_id": "tvnoord.nl",
+   "tvg_name": "|NL| TV NOORD"
+  },
+  {
+   "tvg_id": "tvrijnmond.nl",
+   "tvg_name": "|NL| TV RIJNMOND"
+  },
+  {
+   "tvg_id": "tvgelderland.nl",
+   "tvg_name": "|NL| TV GELDERLAND"
+  },
+  {
+   "tvg_id": "tvoost.nl",
+   "tvg_name": "|NL| TV OOST"
+  },
+  {
+   "tvg_id": "tvdrenthe.nl",
+   "tvg_name": "|NL| TV DRENTHE"
+  },
+  {
+   "tvg_id": "omroepbrabant.nl",
+   "tvg_name": "|NL| OMROEP BRABANT"
+  },
+  {
+   "tvg_id": "omroepzeeland.nl",
+   "tvg_name": "|NL| OMROEP ZEELAND"
+  },
+  {
+   "tvg_id": "bbcfirst.nl",
+   "tvg_name": "|NL| BBC FIRST HD"
+  },
+  {
+   "tvg_id": "bbcone.nl",
+   "tvg_name": "|NL| BBC ONE HD"
+  },
+  {
+   "tvg_id": "rtv7.nl",
+   "tvg_name": "|CURACAO| RTV-7"
+  },
+  {
+   "tvg_id": "npo1.nl",
+   "tvg_name": "|NL| NPO 1 4K"
+  },
+  {
+   "tvg_id": "npo2.nl",
+   "tvg_name": "|NL| NPO 2 4K"
+  },
+  {
+   "tvg_id": "npo3.nl",
+   "tvg_name": "|NL| NPO 3 4K"
+  },
+  {
+   "tvg_id": "rtl4.nl",
+   "tvg_name": "|NL| RTL 4 4K"
+  },
+  {
+   "tvg_id": "rtl5.nl",
+   "tvg_name": "|NL| RTL 5 4K"
+  },
+  {
+   "tvg_id": "sbs6.nl",
+   "tvg_name": "|NL| SBS 6 4K"
+  },
+  {
+   "tvg_id": "rtl7.nl",
+   "tvg_name": "|NL| RTL 7 4K"
+  },
+  {
+   "tvg_id": "rtl8.nl",
+   "tvg_name": "|NL| RTL 8 4K"
+  },
+  {
+   "tvg_id": "net5.nl",
+   "tvg_name": "|NL| NET 5 4K"
+  },
+  {
+   "tvg_id": "rtlz.nl",
+   "tvg_name": "|NL| RTL Z 4K"
+  },
+  {
+   "tvg_id": "veronicadisneyxd.nl",
+   "tvg_name": "|NL| VERONICA 4K / DISNEY XD"
+  },
+  {
+   "tvg_id": "npo1extra.nl",
+   "tvg_name": "|NL| NPO 1 EXTRA 4K"
+  },
+  {
+   "tvg_id": "npo2extra.nl",
+   "tvg_name": "|NL| NPO 2 EXTRA 4K"
+  },
+  {
+   "tvg_id": "npopolitiek.nl",
+   "tvg_name": "|NL| NPO POLITIEK EN NIEUWS 4K"
+  },
+  {
+   "tvg_id": "espn.nl",
+   "tvg_name": "|NL| ESPN 1 4K"
+  },
+  {
+   "tvg_id": "espn2.nl",
+   "tvg_name": "|NL| ESPN 2 4K"
+  },
+  {
+   "tvg_id": "espn3.nl",
+   "tvg_name": "|NL| ESPN 3 4K"
+  },
+  {
+   "tvg_id": "espn4.nl",
+   "tvg_name": "|NL| ESPN 4 4K"
+  },
+  {
+   "tvg_id": "ziggosport.nl",
+   "tvg_name": "|NL| ZIGGO SPORT 4K"
+  },
+  {
+   "tvg_id": "ziggosportvoetbal.nl",
+   "tvg_name": "|NL| ZIGGO SPORT 2 4K"
+  },
+  {
+   "tvg_id": "ziggosportgolf.nl",
+   "tvg_name": "|NL| ZIGGO SPORT 3 4K"
+  },
+  {
+   "tvg_id": "ziggosportracing.nl",
+   "tvg_name": "|NL| ZIGGO SPORT 4 4K"
+  },
+  {
+   "tvg_id": "ziggosportdocu.nl",
+   "tvg_name": "|NL| ZIGGO SPORT 5 4K"
+  },
+  {
+   "tvg_id": "ziggosporttennis.nl",
+   "tvg_name": "|NL| ZIGGO SPORT 6 4K"
+  },
+  {
+   "tvg_id": "eurosport1.nl",
+   "tvg_name": "|NL| EUROSPORT 1 4K"
+  },
+  {
+   "tvg_id": "eurosport2.nl",
+   "tvg_name": "|NL| EUROSPORT 2 4K"
+  },
+  {
+   "tvg_id": "film1premiere.nl",
+   "tvg_name": "|NL| FILM1 PREMIERE 4K"
+  },
+  {
+   "tvg_id": "film1action.nl",
+   "tvg_name": "|NL| FILM1 ACTION 4K"
+  },
+  {
+   "tvg_id": "film1family.nl",
+   "tvg_name": "|NL| FILM1 FAMILY 4K"
+  },
+  {
+   "tvg_id": "film1drama.nl",
+   "tvg_name": "|NL| FILM1 DRAMA 4K"
+  },
+  {
+   "tvg_id": "nickelodeon.nl",
+   "tvg_name": "|NL| NICKELODEON 4K"
+  },
+  {
+   "tvg_id": "nickjr.nl",
+   "tvg_name": "|NL| NICK JR. 4K"
+  },
+  {
+   "tvg_id": "nicktoons.nl",
+   "tvg_name": "|NL| NICKTOONS 4K"
+  },
+  {
+   "tvg_id": "babytv.nl",
+   "tvg_name": "|NL| BABY TV 4K"
+  },
+  {
+   "tvg_id": "rtltelekids.nl",
+   "tvg_name": "|NL| RTL TELEKIDS 4K"
+  },
+  {
+   "tvg_id": "cartoonnetwork.nl",
+   "tvg_name": "|NL| CARTOON NETWORK 4K"
+  },
+  {
+   "tvg_id": "disneychannel.nl",
+   "tvg_name": "|NL| DISNEY CHANNEL 4K"
+  },
+  {
+   "tvg_id": "ketnet.nl",
+   "tvg_name": "|NL| KETNET 4K"
+  },
+  {
+   "tvg_id": "rtlcrime.nl",
+   "tvg_name": "|NL| RTL CRIME 4K"
+  },
+  {
+   "tvg_id": "fox.nl",
+   "tvg_name": "|NL| FOX CHANNEL 4K"
+  },
+  {
+   "tvg_id": "eentertainment.nl",
+   "tvg_name": "|NL| E! ENTERTAINMENT 4K"
+  },
+  {
+   "tvg_id": "comedycentral.nl",
+   "tvg_name": "|NL| COMEDY CENTRAL 4K"
+  },
+  {
+   "tvg_id": "paramountnetwork.nl",
+   "tvg_name": "|NL| PARAMOUNT NETWORK 4K"
+  },
+  {
+   "tvg_id": "bbcfirst.nl",
+   "tvg_name": "|NL| BBC FIRST 4K"
+  },
+  {
+   "tvg_id": "bbcentertainment.nl",
+   "tvg_name": "|NL| BBC ENTERTAINMENT 4K"
+  },
+  {
+   "tvg_id": "bbcone.nl",
+   "tvg_name": "|NL| BBC ONE 4K"
+  },
+  {
+   "tvg_id": "bbctwo.nl",
+   "tvg_name": "|NL| BBC TWO 4K"
+  },
+  {
+   "tvg_id": "outtv.nl",
+   "tvg_name": "|NL| OUTTV 4K"
+  },
+  {
+   "tvg_id": "shortstv.nl",
+   "tvg_name": "|NL| SHORTS TV 4K"
+  },
+  {
+   "tvg_id": "fashiontv.nl",
+   "tvg_name": "|NL| FASHION TV 4K"
+  },
+  {
+   "tvg_id": "24kitchen.nl",
+   "tvg_name": "|NL| 24 KITCHEN 4K"
+  },
+  {
+   "tvg_id": "tlc.nl",
+   "tvg_name": "|NL| TLC 4K"
+  },
+  {
+   "tvg_id": "njam.nl",
+   "tvg_name": "|NL| NJAM! 4K"
+  },
+  {
+   "tvg_id": "myzen.nl",
+   "tvg_name": "|NL| MYZEN TV 4K"
+  },
+  {
+   "tvg_id": "ziggotv.nl",
+   "tvg_name": "|NL| ZIGGO TV 4K"
+  },
+  {
+   "tvg_id": "nickmusic.nl",
+   "tvg_name": "|NL| NICK MUSIC 4K"
+  },
+  {
+   "tvg_id": "slam.nl",
+   "tvg_name": "|NL| SLAM!TV 4K"
+  },
+  {
+   "tvg_id": "tv538.nl",
+   "tvg_name": "|NL| TV538 4K"
+  },
+  {
+   "tvg_id": "stingrayclassica.nl",
+   "tvg_name": "|NL| STINGRAY CLASSICA 4K"
+  },
+  {
+   "tvg_id": "stingraydjazz.nl",
+   "tvg_name": "|NL| STINGRAY DJAZZ 4K"
+  },
+  {
+   "tvg_id": "stingraylitetv.nl",
+   "tvg_name": "|NL| STINGRAY LITETV 4K"
+  },
+  {
+   "tvg_id": "xite.nl",
+   "tvg_name": "|NL| XITE 4K"
+  },
+  {
+   "tvg_id": "dancetrippin.nl",
+   "tvg_name": "|NL| DANCE TELEVISION 4K"
+  },
+  {
+   "tvg_id": "tvoranje.nl",
+   "tvg_name": "|NL| TV ORANJE 4K"
+  },
+  {
+   "tvg_id": "100nltv.nl",
+   "tvg_name": "|NL| 100% NL TV 4K"
+  },
+  {
+   "tvg_id": "ons.nl",
+   "tvg_name": "|NL| ONS 4K"
+  },
+  {
+   "tvg_id": "192tv.nl",
+   "tvg_name": "|NL| 192TV 4K"
+  },
+  {
+   "tvg_id": "mezzo.nl",
+   "tvg_name": "|NL| MEZZO 4K"
+  },
+  {
+   "tvg_id": "natgeo.nl",
+   "tvg_name": "|NL| NGC 4K"
+  },
+  {
+   "tvg_id": "natgeowild.nl",
+   "tvg_name": "|NL| NGC WILD 4K"
+  },
+  {
+   "tvg_id": "discoverychannel.nl",
+   "tvg_name": "|NL| DISCOVER CHANNEL 4K"
+  },
+  {
+   "tvg_id": "discoveryscience.nl",
+   "tvg_name": "|NL| DISCOVER SCIENCE 4K"
+  },
+  {
+   "tvg_id": "discoverychannel.nl",
+   "tvg_name": "|NL| DISCOVERY 4K"
+  },
+  {
+   "tvg_id": "discoveryscience.nl",
+   "tvg_name": "|NL| DISCOVERY SCIENCE 4K"
+  },
+  {
+   "tvg_id": "investigationdiscovery.nl",
+   "tvg_name": "|NL| ID 4K"
+  },
+  {
+   "tvg_id": "history.nl",
+   "tvg_name": "|NL| HISTORY 4K"
+  },
+  {
+   "tvg_id": "animalplanet.nl",
+   "tvg_name": "|NL| ANIMAL PLANET 4K"
+  },
+  {
+   "tvg_id": "mezzo.nl",
+   "tvg_name": "|NL| LOVE NATURE 4K"
+  },
+  {
+   "tvg_id": "horsecountrytv.nl",
+   "tvg_name": "|NL| HORSE & COUNTRY TV 4K"
+  },
+  {
+   "tvg_id": "bvn.nl",
+   "tvg_name": "|NL| BVN 4K"
+  },
+  {
+   "tvg_id": "at5.nl",
+   "tvg_name": "|NL| AT5 4K"
+  },
+  {
+   "tvg_id": "l1tv.nl",
+   "tvg_name": "|NL| L1 TV 4K"
+  },
+  {
+   "tvg_id": "rtvutrecht.nl",
+   "tvg_name": "|NL| RTL UTRECHT 4K"
+  },
+  {
+   "tvg_id": "rtvrijnmond.nl",
+   "tvg_name": "|NL| RTL RIJNMOND 4K"
+  },
+  {
+   "tvg_id": "omroepgelderland.nl",
+   "tvg_name": "|NL| OMROEP GELDERLAND 4K"
+  },
+  {
+   "tvg_id": "tvoost.nl",
+   "tvg_name": "|NL| RTL OOST 4K"
+  },
+  {
+   "tvg_id": "rtvwest.nl",
+   "tvg_name": "|NL| RTL WEST 4K"
+  },
+  {
+   "tvg_id": "rtvdrenthe.nl",
+   "tvg_name": "|NL| RTL DRENTHEN 4K"
+  },
+  {
+   "tvg_id": "nh.nl",
+   "tvg_name": "|NL| NH NIEUWS 4K"
+  },
+  {
+   "tvg_id": "omroepbrabant.nl",
+   "tvg_name": "|NL| OMROEP BRABANT 4K"
+  },
+  {
+   "tvg_id": "omroepflevoland.nl",
+   "tvg_name": "|NL| OMROEP FLEVOLAND 4K"
+  },
+  {
+   "tvg_id": "omroepzeeland.nl",
+   "tvg_name": "|NL| OMROEP ZEELAND 4K"
+  },
+  {
+   "tvg_id": "omropfryslan.nl",
+   "tvg_name": "|NL| OMROP FRYSLÂN 4K"
+  }
+ ],
+ "UK": [
+  {
+   "tvg_id": "discoveryturbo.uk",
+   "tvg_name": "|UK| Discovery Turbo HD"
+  },
+  {
+   "tvg_id": "natgeowild.uk",
+   "tvg_name": "|UK| Nat Geo HD"
+  },
+  {
+   "tvg_id": "natgeowild.uk",
+   "tvg_name": "|UK| Nat Geo Wild HD"
+  },
+  {
+   "tvg_id": "syfy.uk",
+   "tvg_name": "|UK| SyFy HD"
+  },
+  {
+   "tvg_id": "syfy.uk",
+   "tvg_name": "|UK| SYFY 4K"
+  },
+  {
+   "tvg_id": "history2.uk",
+   "tvg_name": "|UK| HISTORY 2 4K"
+  },
+  {
+   "tvg_id": "historychannel.uk",
+   "tvg_name": "|UK| HISTORY 4K"
+  },
+  {
+   "tvg_id": "crimeandinvestigationnetwork.uk",
+   "tvg_name": "|UK| CRIME&INVESTIGATION 4K"
+  },
+  {
+   "tvg_id": "animalplanet.uk",
+   "tvg_name": "|UK| ANIMAL PLANET 4K"
+  },
+  {
+   "tvg_id": "natgeowild.uk",
+   "tvg_name": "|UK| NAT GEO WILD 4K"
+  },
+  {
+   "tvg_id": "natgeo.uk",
+   "tvg_name": "|UK| NAT GEO 4K"
+  },
+  {
+   "tvg_id": "skynature.uk",
+   "tvg_name": "|UK| SKY NATURE 4K"
+  },
+  {
+   "tvg_id": "skydocumentaries.uk",
+   "tvg_name": "|UK| SKY DOCUMENTARIES 4K"
+  },
+  {
+   "tvg_id": "discoverychannel.uk",
+   "tvg_name": "|UK| DISCOVERY 4K"
+  },
+  {
+   "tvg_id": "discoveryscience.uk",
+   "tvg_name": "|UK| DISCOVERY SCIENCE SD"
+  },
+  {
+   "tvg_id": "discoveryturbo.uk",
+   "tvg_name": "|UK| DISCOVERY TURBO SD"
+  },
+  {
+   "tvg_id": "discoverychannel.uk",
+   "tvg_name": "|UK| DISCOVERY SD"
+  },
+  {
+   "tvg_id": "natgeo.uk",
+   "tvg_name": "|UK| NAT GEO SD"
+  },
+  {
+   "tvg_id": "natgeowild.uk",
+   "tvg_name": "|UK| NAT GEO WILD SD"
+  },
+  {
+   "tvg_id": "animalplanet.uk",
+   "tvg_name": "|UK| ANIMAL PLANET SD"
+  },
+  {
+   "tvg_id": "crimeandinvestigationnetwork.uk",
+   "tvg_name": "|UK| CRIME&INVESTIGATION SD"
+  },
+  {
+   "tvg_id": "historychannel.uk",
+   "tvg_name": "|UK| HISTORY SD"
+  },
+  {
+   "tvg_id": "history2.uk",
+   "tvg_name": "|UK| HISTORY 2 SD"
+  },
+  {
+   "tvg_id": "horseandcountry.uk",
+   "tvg_name": "|UK| HORSE AND COUNTRY SD"
+  },
+  {
+   "tvg_id": "investigationdiscovery.uk",
+   "tvg_name": "|UK| INVESTIGATION DISCOVERY |ID| SD"
+  },
+  {
+   "tvg_id": "syfy.uk",
+   "tvg_name": "|UK| SYFY SD"
+  },
+  {
+   "tvg_id": "kisstv.uk",
+   "tvg_name": "|UK| KISS TV HD"
+  },
+  {
+   "tvg_id": "mtvlive.uk",
+   "tvg_name": "|UK| MTV LIVE 4K"
+  },
+  {
+   "tvg_id": "mtv.uk",
+   "tvg_name": "|UK| MTV 4K"
+  },
+  {
+   "tvg_id": "clublandtv.uk",
+   "tvg_name": "|UK| CLUBLAND SD"
+  },
+  {
+   "tvg_id": "kerrang.uk",
+   "tvg_name": "|UK| KERRANG SD"
+  },
+  {
+   "tvg_id": "vh1.uk",
+   "tvg_name": "|UK| VH1 SD"
+  },
+  {
+   "tvg_id": "now80s.uk",
+   "tvg_name": "|UK| NOW 80s SD"
+  },
+  {
+   "tvg_id": "mtvlive.uk",
+   "tvg_name": "|UK| MTV LIVE SD"
+  },
+  {
+   "tvg_id": "mtvmusic.uk",
+   "tvg_name": "|UK| MTV MUSIC SD"
+  },
+  {
+   "tvg_id": "mtvhits.uk",
+   "tvg_name": "|UK| MTV HITS SD"
+  },
+  {
+   "tvg_id": "mtvclassic.uk",
+   "tvg_name": "|UK| MTV CLASSIC SD"
+  },
+  {
+   "tvg_id": "mtvbase.uk",
+   "tvg_name": "|UK| MTV BASE SD"
+  },
+  {
+   "tvg_id": "magic.uk",
+   "tvg_name": "|UK| MAGIC SD"
+  },
+  {
+   "tvg_id": "kisstv.uk",
+   "tvg_name": "|UK| KISS TV SD"
+  },
+  {
+   "tvg_id": "4music.uk",
+   "tvg_name": "|UK| 4 MUSIC SD"
+  },
+  {
+   "tvg_id": "thebox.uk",
+   "tvg_name": "|UK| THE BOX SD"
+  },
+  {
+   "tvg_id": "skysportsnews.uk",
+   "tvg_name": "|UK| SKY SPORTS NEWS HD"
+  },
+  {
+   "tvg_id": "skysportsaction.uk",
+   "tvg_name": "|UK| SKY SPORTS ACTION HD"
+  },
+  {
+   "tvg_id": "skysportsfootball.uk",
+   "tvg_name": "|UK| SKY SPORTS FOOTBALL HD"
+  },
+  {
+   "tvg_id": "skysportsmainevent.uk",
+   "tvg_name": "|UK| SKY SPORTS MAIN EVENT HD"
+  },
+  {
+   "tvg_id": "skysportspremiereleague.uk",
+   "tvg_name": "|UK| SKY SPORTS PREMIER LEAGUE HD"
+  },
+  {
+   "tvg_id": "skysportsarena.uk",
+   "tvg_name": "|UK| SKY SPORTS ARENA HD"
+  },
+  {
+   "tvg_id": "skysportscricket.uk",
+   "tvg_name": "|UK| SKY SPORTS CRICKET HD"
+  },
+  {
+   "tvg_id": "skysportsf1.uk",
+   "tvg_name": "|UK| SKY SPORTS F1 HD"
+  },
+  {
+   "tvg_id": "skysportstennis.uk",
+   "tvg_name": "|UK| SKY SPORTS TENNIS HD"
+  },
+  {
+   "tvg_id": "skysportsgolf.uk",
+   "tvg_name": "|UK| SKY SPORTS GOLF HD"
+  },
+  {
+   "tvg_id": "skysportsaction.uk",
+   "tvg_name": "|UK| SKY SPORTS ACTION 4K"
+  },
+  {
+   "tvg_id": "skysportsfootball.uk",
+   "tvg_name": "|UK| SKY SPORTS FOOTBALL 4K"
+  },
+  {
+   "tvg_id": "skysportspremiereleague.uk",
+   "tvg_name": "|UK| SKY SPORTS PREMIER LEAGUE 4K"
+  },
+  {
+   "tvg_id": "skysportsmainevent.uk",
+   "tvg_name": "|UK| SKY SPORTS MAIN EVENT 4K"
+  },
+  {
+   "tvg_id": "skysportsmix.uk",
+   "tvg_name": "|UK| SKY SPORT MIX 4K"
+  },
+  {
+   "tvg_id": "skysportsracing.uk",
+   "tvg_name": "|UK| SKY SPORTS RACING 4K"
+  },
+  {
+   "tvg_id": "skysportsarena.uk",
+   "tvg_name": "|UK| SKY SPORTS ARENA 4K"
+  },
+  {
+   "tvg_id": "skysportscricket.uk",
+   "tvg_name": "|UK| SKY SPORTS CRICKET 4K"
+  },
+  {
+   "tvg_id": "skysportsf1.uk",
+   "tvg_name": "|UK| SKY SPORTS F1 4K"
+  },
+  {
+   "tvg_id": "skysportsgolf.uk",
+   "tvg_name": "|UK| SKY SPORTS GOLF 4K"
+  },
+  {
+   "tvg_id": "skysportsnews.uk",
+   "tvg_name": "|UK| SKY SPORTS NEWS SD"
+  },
+  {
+   "tvg_id": "skysportsaction.uk",
+   "tvg_name": "|UK| SKY SPORTS ACTION SD"
+  },
+  {
+   "tvg_id": "skysportsfootball.uk",
+   "tvg_name": "|UK| SKY SPORTS FOOTBALL SD"
+  },
+  {
+   "tvg_id": "skysportsmainevent.uk",
+   "tvg_name": "|UK| SKY SPORTS MAIN EVENT SD"
+  },
+  {
+   "tvg_id": "skysportspremiereleague.uk",
+   "tvg_name": "|UK| SKY SPORTS PREMIER LEAGUE SD"
+  },
+  {
+   "tvg_id": "skysportsracing.uk",
+   "tvg_name": "|UK| SKY SPORTS RACING SD"
+  },
+  {
+   "tvg_id": "skysportsarena.uk",
+   "tvg_name": "|UK| SKY SPORTS ARENA SD"
+  },
+  {
+   "tvg_id": "skysportscricket.uk",
+   "tvg_name": "|UK| SKY SPORTS CRICKET SD"
+  },
+  {
+   "tvg_id": "skysportsf1.uk",
+   "tvg_name": "|UK| SKY SPORTS F1 SD"
+  },
+  {
+   "tvg_id": "skysportsmix.uk",
+   "tvg_name": "|UK| SKY SPORT MIX SD"
+  },
+  {
+   "tvg_id": "skysportsgolf.uk",
+   "tvg_name": "|UK| SKY SPORTS GOLF SD"
+  },
+  {
+   "tvg_id": "liverpoolfctv.uk",
+   "tvg_name": "|UK| LFC 4K"
+  },
+  {
+   "tvg_id": "premiersports.uk",
+   "tvg_name": "|UK| PREMIER SPORTS 4K"
+  },
+  {
+   "tvg_id": "premiersports2.uk",
+   "tvg_name": "|UK| PREMIER SPORTS 2 4K"
+  },
+  {
+   "tvg_id": "racinguk.uk",
+   "tvg_name": "|UK| RACING UK 4K"
+  },
+  {
+   "tvg_id": "mutv.uk",
+   "tvg_name": "|UK| MUTV 4K"
+  },
+  {
+   "tvg_id": "mutv.uk",
+   "tvg_name": "|UK| MUTV SD"
+  },
+  {
+   "tvg_id": "premiersports.uk",
+   "tvg_name": "|UK| PREMIER SPORTS SD"
+  },
+  {
+   "tvg_id": "premiersports2.uk",
+   "tvg_name": "|UK| PREMIER SPORTS 2 SD"
+  },
+  {
+   "tvg_id": "racinguk.uk",
+   "tvg_name": "|UK| RACING UK SD"
+  },
+  {
+   "tvg_id": "btsport2.uk",
+   "tvg_name": "|UK| TNT SPORTS 2 HD"
+  },
+  {
+   "tvg_id": "btsport3.uk",
+   "tvg_name": "|UK| TNT SPORTS 3 4K"
+  },
+  {
+   "tvg_id": "btsportespn.uk",
+   "tvg_name": "|UK| TNT SPORTS 4 HD"
+  },
+  {
+   "tvg_id": "btsport1.uk",
+   "tvg_name": "|UK| TNT SPORTS 1 4K"
+  },
+  {
+   "tvg_id": "btsport3.uk",
+   "tvg_name": "|UK| TNT SPORTS 3 4K"
+  },
+  {
+   "tvg_id": "btsportespn.uk",
+   "tvg_name": "|UK| TNT SPORTS 4 4K"
+  },
+  {
+   "tvg_id": "btsportx1.uk",
+   "tvg_name": "|UK| TNT SPORTS 5 4K"
+  },
+  {
+   "tvg_id": "btsport2.uk",
+   "tvg_name": "|UK| TNT SPORTS 2 SD"
+  },
+  {
+   "tvg_id": "btsport3.uk",
+   "tvg_name": "|UK| TNT SPORTS 3 SD"
+  },
+  {
+   "tvg_id": "skyaction.uk",
+   "tvg_name": "|UK| SKY CINEMA ACTION 4K"
+  },
+  {
+   "tvg_id": "skycomedy.uk",
+   "tvg_name": "|UK| SKY CINEMA COMEDY 4K"
+  },
+  {
+   "tvg_id": "skyfamily.uk",
+   "tvg_name": "|UK| SKY CINEMA FAMILY 4K"
+  },
+  {
+   "tvg_id": "skygreats.uk",
+   "tvg_name": "|UK| SKY CINEMA GREATS 4K"
+  },
+  {
+   "tvg_id": "skythriller.uk",
+   "tvg_name": "|UK| SKY CINEMA THRILLER 4K"
+  },
+  {
+   "tvg_id": "skydrama.uk",
+   "tvg_name": "|UK| SKY CINEMA DRAMA 4K"
+  },
+  {
+   "tvg_id": "skyhits.uk",
+   "tvg_name": "|UK| SKY CINEMA HITS 4K"
+  },
+  {
+   "tvg_id": "skyanimation.uk",
+   "tvg_name": "|UK| SKY CINEMA ANIMATION 4K"
+  },
+  {
+   "tvg_id": "skypremiere.uk",
+   "tvg_name": "|UK| SKY CINEMA PREMIER 4K"
+  },
+  {
+   "tvg_id": "film4.uk",
+   "tvg_name": "|UK| FILM 4 4K"
+  },
+  {
+   "tvg_id": "skycinemacomedy.uk",
+   "tvg_name": "|UK| SKY CINEMA COMEDY SD"
+  },
+  {
+   "tvg_id": "skydrama.uk",
+   "tvg_name": "|UK| SKY CINEMA DRAMA SD"
+  },
+  {
+   "tvg_id": "skyfamily.uk",
+   "tvg_name": "|UK| SKY CINEMA FAMILY SD"
+  },
+  {
+   "tvg_id": "skygreats.uk",
+   "tvg_name": "|UK| SKY CINEMA GREATS SD"
+  },
+  {
+   "tvg_id": "skyhits.uk",
+   "tvg_name": "|UK| SKY CINEMA HITS SD"
+  },
+  {
+   "tvg_id": "skyscifihorror.uk",
+   "tvg_name": "|UK| SKY CINEMA SCI-FI & HORROR SD"
+  },
+  {
+   "tvg_id": "film4.uk",
+   "tvg_name": "|UK| FILM 4 SD"
+  },
+  {
+   "tvg_id": "horrorchannel.uk",
+   "tvg_name": "|UK| HORROR CHANNEL SD"
+  },
+  {
+   "tvg_id": "dave.uk",
+   "tvg_name": "|UK| DAVE HD"
+  },
+  {
+   "tvg_id": "eden.uk",
+   "tvg_name": "|UK| Eden HD"
+  },
+  {
+   "tvg_id": "gold.uk",
+   "tvg_name": "|UK| Gold HD"
+  },
+  {
+   "tvg_id": "eentertainment.uk",
+   "tvg_name": "|UK| E! ENTERTAINMENT HD"
+  },
+  {
+   "tvg_id": "skyatlantic.uk",
+   "tvg_name": "|UK| SKY ATLANTIC HD"
+  },
+  {
+   "tvg_id": "skyarts.uk",
+   "tvg_name": "|UK| SKY ARTS HD"
+  },
+  {
+   "tvg_id": "skywitness.uk",
+   "tvg_name": "|UK| SKY WITNESS HD"
+  },
+  {
+   "tvg_id": "tlc.uk",
+   "tvg_name": "|UK| TLC HD"
+  },
+  {
+   "tvg_id": "tlc.uk",
+   "tvg_name": "|UK| TLC SD"
+  },
+  {
+   "tvg_id": "skywitness.uk",
+   "tvg_name": "|UK| SKY WITNESS 4K"
+  },
+  {
+   "tvg_id": "skyarts.uk",
+   "tvg_name": "|UK| SKY ARTS 4K"
+  },
+  {
+   "tvg_id": "skyatlantic.uk",
+   "tvg_name": "|UK| SKY ATLANTIC 4K"
+  },
+  {
+   "tvg_id": "skycrime.uk",
+   "tvg_name": "|UK| SKY CRIME 4K"
+  },
+  {
+   "tvg_id": "sky1.uk",
+   "tvg_name": "|UK| SKY ONE 4K"
+  },
+  {
+   "tvg_id": "more4.uk",
+   "tvg_name": "|UK| MORE 4 4K"
+  },
+  {
+   "tvg_id": "eentertainment.uk",
+   "tvg_name": "|UK| E! ENTERTAINMENT 4K"
+  },
+  {
+   "tvg_id": "gold.uk",
+   "tvg_name": "|UK| GOLD 4K"
+  },
+  {
+   "tvg_id": "dave.uk",
+   "tvg_name": "|UK| DAVE 4K"
+  },
+  {
+   "tvg_id": "sky1.uk",
+   "tvg_name": "|UK| SKY ONE SD"
+  },
+  {
+   "tvg_id": "4seven.uk",
+   "tvg_name": "|UK| 4 SEVEN SD"
+  },
+  {
+   "tvg_id": "5select.uk",
+   "tvg_name": "|UK| 5 SELECT SD"
+  },
+  {
+   "tvg_id": "5star.uk",
+   "tvg_name": "|UK| 5 STAR SD"
+  },
+  {
+   "tvg_id": "challenge.uk",
+   "tvg_name": "|UK| CHALLENGE SD"
+  },
+  {
+   "tvg_id": "dave.uk",
+   "tvg_name": "|UK| DAVE SD"
+  },
+  {
+   "tvg_id": "drama.uk",
+   "tvg_name": "|UK| DRAMA SD"
+  },
+  {
+   "tvg_id": "eentertainment.uk",
+   "tvg_name": "|UK| E! ENTERTAINMENT SD"
+  },
+  {
+   "tvg_id": "e4.uk",
+   "tvg_name": "|UK| E4 SD"
+  },
+  {
+   "tvg_id": "eden.uk",
+   "tvg_name": "|UK| EDEN SD"
+  },
+  {
+   "tvg_id": "gold.uk",
+   "tvg_name": "|UK| GOLD SD"
+  },
+  {
+   "tvg_id": "more4.uk",
+   "tvg_name": "|UK| MORE 4 SD"
+  },
+  {
+   "tvg_id": "pbsamerica.uk",
+   "tvg_name": "|UK| PBS AMERICA SD"
+  },
+  {
+   "tvg_id": "picktv.uk",
+   "tvg_name": "|UK| PICK TV SD"
+  },
+  {
+   "tvg_id": "quest.uk",
+   "tvg_name": "|UK| QUEST SD"
+  },
+  {
+   "tvg_id": "questred.uk",
+   "tvg_name": "|UK| QUEST RED SD"
+  },
+  {
+   "tvg_id": "really.uk",
+   "tvg_name": "|UK| REALLY SD"
+  },
+  {
+   "tvg_id": "yesterday.uk",
+   "tvg_name": "|UK| YESTERDAY SD"
+  },
+  {
+   "tvg_id": "skyatlantic.uk",
+   "tvg_name": "|UK| SKY ATLANTIC SD"
+  },
+  {
+   "tvg_id": "skyarts.uk",
+   "tvg_name": "|UK| SKY ARTS SD"
+  },
+  {
+   "tvg_id": "skywitness.uk",
+   "tvg_name": "|UK| SKY WITNESS SD"
+  },
+  {
+   "tvg_id": "qvc.uk",
+   "tvg_name": "|UK| QVC SD"
+  },
+  {
+   "tvg_id": "foodnetwork.uk",
+   "tvg_name": "|UK| FOOD NETWORK SD"
+  },
+  {
+   "tvg_id": "boomerang.uk",
+   "tvg_name": "|UK| BOOMERANG HD"
+  },
+  {
+   "tvg_id": "cartoonito.uk",
+   "tvg_name": "|UK| CARTOONITO HD"
+  },
+  {
+   "tvg_id": "cartoonnetwork.uk",
+   "tvg_name": "|UK| CARTOON NETWORK HD"
+  },
+  {
+   "tvg_id": "nickjunior.uk",
+   "tvg_name": "|UK| NICK JR HD"
+  },
+  {
+   "tvg_id": "nickelodeon.uk",
+   "tvg_name": "|UK| NICKELODEON HD"
+  },
+  {
+   "tvg_id": "nicktoons.uk",
+   "tvg_name": "|UK| NICKTOONS HD"
+  },
+  {
+   "tvg_id": "cbeebies.uk",
+   "tvg_name": "|UK| CBEEBIES 4K"
+  },
+  {
+   "tvg_id": "comedycentral.uk",
+   "tvg_name": "|UK| COMEDY CENTRAL 4K"
+  },
+  {
+   "tvg_id": "cartoonnetwork.uk",
+   "tvg_name": "|UK| CARTOON NETWORK 4K"
+  },
+  {
+   "tvg_id": "babytv.uk",
+   "tvg_name": "|UK| BABY TV SD"
+  },
+  {
+   "tvg_id": "boomerang.uk",
+   "tvg_name": "|UK| BOOMERANG SD"
+  },
+  {
+   "tvg_id": "cartoonito.uk",
+   "tvg_name": "|UK| CARTOONITO |NOT 24| SD"
+  },
+  {
+   "tvg_id": "cartoonnetwork.uk",
+   "tvg_name": "|UK| CARTOON NETWORK SD"
+  },
+  {
+   "tvg_id": "disneyxd.uk",
+   "tvg_name": "|UK| DISNEY XD SD"
+  },
+  {
+   "tvg_id": "nickjunior.uk",
+   "tvg_name": "|UK| NICK JUNIOR SD"
+  },
+  {
+   "tvg_id": "nickelodeon.uk",
+   "tvg_name": "|UK| NICKELODEON SD"
+  },
+  {
+   "tvg_id": "nicktoons.uk",
+   "tvg_name": "|UK| NICKTOONS SD"
+  },
+  {
+   "tvg_id": "tinypop.uk",
+   "tvg_name": "|UK| TINY POP SD"
+  },
+  {
+   "tvg_id": "tinypopplus1.uk",
+   "tvg_name": "|UK| TINY POP+1 SD"
+  },
+  {
+   "tvg_id": "bbcnews.uk",
+   "tvg_name": "|UK| BBC News HD"
+  },
+  {
+   "tvg_id": "gbnews.uk",
+   "tvg_name": "|UK| GB News HD"
+  },
+  {
+   "tvg_id": "bbcworldnews.uk",
+   "tvg_name": "|UK| BBC WORLD NEWS HD"
+  },
+  {
+   "tvg_id": "bloombergtv.uk",
+   "tvg_name": "|UK| BLOOMBERG HD"
+  },
+  {
+   "tvg_id": "cnn.uk",
+   "tvg_name": "|UK| CNN HD"
+  },
+  {
+   "tvg_id": "skynews.uk",
+   "tvg_name": "|UK| SKY NEWS HD"
+  },
+  {
+   "tvg_id": "bbcnews.uk",
+   "tvg_name": "|UK| BBC NEWS 4K"
+  },
+  {
+   "tvg_id": "bbcworldnews.uk",
+   "tvg_name": "|UK| BBC WORLD NEWS 4K"
+  },
+  {
+   "tvg_id": "bloombergtv.uk",
+   "tvg_name": "|UK| BLOOMBERG 4K"
+  },
+  {
+   "tvg_id": "cnn.uk",
+   "tvg_name": "|UK| CNN 4K"
+  },
+  {
+   "tvg_id": "france24.uk",
+   "tvg_name": "|UK| FRANCE 24 4K"
+  },
+  {
+   "tvg_id": "skynews.uk",
+   "tvg_name": "|UK| SKY NEWS 4K"
+  },
+  {
+   "tvg_id": "gbnews.uk",
+   "tvg_name": "|UK| GBC HD"
+  },
+  {
+   "tvg_id": "gbnews.uk",
+   "tvg_name": "|UK| GBC 4K"
+  },
+  {
+   "tvg_id": "bbcnews.uk",
+   "tvg_name": "|UK| BBC NEWS SD"
+  },
+  {
+   "tvg_id": "bbcworldnews.uk",
+   "tvg_name": "|UK| BBC WORLD NEWS SD"
+  },
+  {
+   "tvg_id": "bloombergtv.uk",
+   "tvg_name": "|UK| BLOOMBERG SD"
+  },
+  {
+   "tvg_id": "cnbc.uk",
+   "tvg_name": "|UK| CNBC SD"
+  },
+  {
+   "tvg_id": "cnn.uk",
+   "tvg_name": "|UK| CNN SD"
+  },
+  {
+   "tvg_id": "euronews.uk",
+   "tvg_name": "|UK| EURO NEWS SD"
+  },
+  {
+   "tvg_id": "france24.uk",
+   "tvg_name": "|UK| FRANCE 24 EN SD"
+  },
+  {
+   "tvg_id": "aljazeera.uk",
+   "tvg_name": "|UK| AL JAZEERA EN SD"
+  },
+  {
+   "tvg_id": "skynews.uk",
+   "tvg_name": "|UK| SKY NEWS SD"
+  },
+  {
+   "tvg_id": "bbconelondon.uk",
+   "tvg_name": "|UK| BBC One HD"
+  },
+  {
+   "tvg_id": "bbc2.uk",
+   "tvg_name": "|UK| BBC Two HD"
+  },
+  {
+   "tvg_id": "cbbc.uk",
+   "tvg_name": "|UK| BBC3/CBBC HD"
+  },
+  {
+   "tvg_id": "cbeebies.uk",
+   "tvg_name": "|UK| BBC4/CBEEBIES HD"
+  },
+  {
+   "tvg_id": "itv1.uk",
+   "tvg_name": "|UK| ITV 1 HD"
+  },
+  {
+   "tvg_id": "itv2.uk",
+   "tvg_name": "|UK| ITV 2 HD"
+  },
+  {
+   "tvg_id": "itv3.uk",
+   "tvg_name": "|UK| ITV 3 HD"
+  },
+  {
+   "tvg_id": "itv4.uk",
+   "tvg_name": "|UK| ITV 4 HD"
+  },
+  {
+   "tvg_id": "itvbe.uk",
+   "tvg_name": "|UK| ITV Be HD"
+  },
+  {
+   "tvg_id": "channel4.uk",
+   "tvg_name": "|UK| CHANNEL 4 HD"
+  },
+  {
+   "tvg_id": "alibi.uk",
+   "tvg_name": "|UK| ALIBI HD"
+  },
+  {
+   "tvg_id": "cbbc.uk",
+   "tvg_name": "|UK| CBBC HD"
+  },
+  {
+   "tvg_id": "bbc1scotland.uk",
+   "tvg_name": "|UK| BBC Scotland HD"
+  },
+  {
+   "tvg_id": "bbconelondon.uk",
+   "tvg_name": "|UK| BBC One London HD"
+  },
+  {
+   "tvg_id": "bbc1.uk",
+   "tvg_name": "|UK| BBC 1 4K"
+  },
+  {
+   "tvg_id": "bbc2.uk",
+   "tvg_name": "|UK| BBC 2 4K"
+  },
+  {
+   "tvg_id": "bbc3.uk",
+   "tvg_name": "|UK| BBC 3/CBBC 4K"
+  },
+  {
+   "tvg_id": "bbc4.uk",
+   "tvg_name": "|UK| BBC 4/CBEEBIES 4K"
+  },
+  {
+   "tvg_id": "bbcscotland.uk",
+   "tvg_name": "|UK| BBC SCOTLAND 4K"
+  },
+  {
+   "tvg_id": "itv1.uk",
+   "tvg_name": "|UK| ITV 1 4K"
+  },
+  {
+   "tvg_id": "itv2.uk",
+   "tvg_name": "|UK| ITV 2 4K"
+  },
+  {
+   "tvg_id": "itv3.uk",
+   "tvg_name": "|UK| ITV 3 4K"
+  },
+  {
+   "tvg_id": "itv4.uk",
+   "tvg_name": "|UK| ITV 4 4K"
+  },
+  {
+   "tvg_id": "itvbe.uk",
+   "tvg_name": "|UK| ITV BE 4K"
+  },
+  {
+   "tvg_id": "channel4.uk",
+   "tvg_name": "|UK| CHANNEL 4 4K"
+  },
+  {
+   "tvg_id": "channel5.uk",
+   "tvg_name": "|UK| CHANNEL 5 4K"
+  },
+  {
+   "tvg_id": "e4.uk",
+   "tvg_name": "|UK| E4 4K"
+  },
+  {
+   "tvg_id": "alibi.uk",
+   "tvg_name": "|UK| ALIBI 4K"
+  },
+  {
+   "tvg_id": "4seven.uk",
+   "tvg_name": "|UK| 4 SEVEN 4K"
+  },
+  {
+   "tvg_id": "cbbc.uk",
+   "tvg_name": "|UK| CBBC 4K"
+  },
+  {
+   "tvg_id": "bbc1.uk",
+   "tvg_name": "|UK| BBC1 SD"
+  },
+  {
+   "tvg_id": "bbc2.uk",
+   "tvg_name": "|UK| BBC2 SD"
+  },
+  {
+   "tvg_id": "bbcparliament.uk",
+   "tvg_name": "|UK| BBC PARLIAMENT SD"
+  },
+  {
+   "tvg_id": "channel4.uk",
+   "tvg_name": "|UK| CHANNEL 4 SD"
+  },
+  {
+   "tvg_id": "channel5.uk",
+   "tvg_name": "|UK| CHANNEL 5 SD"
+  },
+  {
+   "tvg_id": "itv1.uk",
+   "tvg_name": "|UK| ITV 1 SD"
+  },
+  {
+   "tvg_id": "itv2.uk",
+   "tvg_name": "|UK| ITV 2 SD"
+  },
+  {
+   "tvg_id": "itv3.uk",
+   "tvg_name": "|UK| ITV 3"
+  },
+  {
+   "tvg_id": "itv4.uk",
+   "tvg_name": "|UK| ITV 4 SD"
+  },
+  {
+   "tvg_id": "alibi.uk",
+   "tvg_name": "|UK| ALIBI SD"
+  },
+  {
+   "tvg_id": "citv.uk",
+   "tvg_name": "|UK| CITV SD"
+  },
+  {
+   "tvg_id": "itvwales.uk",
+   "tvg_name": "|UK| ITV WALES SD"
+  },
+  {
+   "tvg_id": "itvborder.uk",
+   "tvg_name": "|UK| ITV BORDER SD"
+  },
+  {
+   "tvg_id": "itvgranada.uk",
+   "tvg_name": "|UK| ITV GRANADA SD"
+  },
+  {
+   "tvg_id": "itvtynetees.uk",
+   "tvg_name": "|UK| ITV TYNE TEES SD"
+  },
+  {
+   "tvg_id": "itvlondon.uk",
+   "tvg_name": "|UK| ITV LONDON SD"
+  },
+  {
+   "tvg_id": "bbc2wales.uk",
+   "tvg_name": "|UK| BBC TWO WALES SD"
+  },
+  {
+   "tvg_id": "bbc1northernireland.uk",
+   "tvg_name": "|UK| BBC TWO NORTHEN IRELAND SD"
+  },
+  {
+   "tvg_id": "bbcyourkshirelincolnshire.uk",
+   "tvg_name": "|UK| BBC ONE YORKSHIRE & LINCOLNSHIRE SD"
+  },
+  {
+   "tvg_id": "bbcwestmidlans.uk",
+   "tvg_name": "|UK| BBC ONE WEST MIDLANDS SD"
+  },
+  {
+   "tvg_id": "bbcwest.uk",
+   "tvg_name": "|UK| BBC ONE WEST SD"
+  },
+  {
+   "tvg_id": "bbc1wales.uk",
+   "tvg_name": "|UK| BBC ONE WALES SD"
+  },
+  {
+   "tvg_id": "bbcsouthwest.uk",
+   "tvg_name": "|UK| BBC ONE SOUTH WEST SD"
+  },
+  {
+   "tvg_id": "bbcsoutheast.uk",
+   "tvg_name": "|UK| BBC One South East SD"
+  },
+  {
+   "tvg_id": "bbcsouth.uk",
+   "tvg_name": "|UK| BBC ONE SOUTH SD"
+  },
+  {
+   "tvg_id": "bbcneandcumbria.uk",
+   "tvg_name": "|UK| BBC ONE NORTH EAST & CUMBRIA SD"
+  },
+  {
+   "tvg_id": "bbconelondon.uk",
+   "tvg_name": "|UK| BBC ONE LONDON SD"
+  },
+  {
+   "tvg_id": "bbceastmidlands.uk",
+   "tvg_name": "|UK| BBC ONE EAST MIDLANDS SD"
+  },
+  {
+   "tvg_id": "bbconeeastw.uk",
+   "tvg_name": "|UK| BBC ONE EAST SD"
+  },
+  {
+   "tvg_id": "bbconechannelislands.uk",
+   "tvg_name": "|UK| BBC ONE CHANNEL ISLANDS SD"
+  },
+  {
+   "tvg_id": "bbcscotland.uk",
+   "tvg_name": "|UK| BBC SCOTLAND SD"
+  },
+  {
+   "tvg_id": "bbcalba.uk",
+   "tvg_name": "|UK| BBC ALBA SD"
+  }
+ ],
+ "USA": [
+  {
+   "tvg_id": "babytv.us",
+   "tvg_name": "|US| BABY TV"
+  },
+  {
+   "tvg_id": "BabyFirstTV.us",
+   "tvg_name": "|US| BABY FIRST TV HD"
+  },
+  {
+   "tvg_id": "NickJr.us",
+   "tvg_name": "|US| NICK JR HD"
+  },
+  {
+   "tvg_id": "CartoonNetwork.us",
+   "tvg_name": "|US| CARTOON NETWORK HD"
+  },
+  {
+   "tvg_id": "Nickelodeon.us",
+   "tvg_name": "|US| NICKELODEON HD"
+  },
+  {
+   "tvg_id": "Nicktoons.us",
+   "tvg_name": "|US| NICKTOONS HD"
+  },
+  {
+   "tvg_id": "DisneyChannel.us",
+   "tvg_name": "|US| DISNEY CHANNEL HD"
+  },
+  {
+   "tvg_id": "DisneyJunior.us",
+   "tvg_name": "|US| DISNEY JR HD"
+  },
+  {
+   "tvg_id": "DisneyXD.us",
+   "tvg_name": "|US| DISNEY XD HD"
+  },
+  {
+   "tvg_id": "TeenNick.us",
+   "tvg_name": "|US| TEEN NICK HD"
+  },
+  {
+   "tvg_id": "pbskids.us",
+   "tvg_name": "|US| PBS KIDS HD"
+  },
+  {
+   "tvg_id": "Boomerang.us",
+   "tvg_name": "|US| BOOMERANG"
+  },
+  {
+   "tvg_id": "UniversalKids.us",
+   "tvg_name": "|US| UNIVERSAL KIDS HD"
+  },
+  {
+   "tvg_id": "ABCNewsLive.us",
+   "tvg_name": "|US| ABC NEWS HD"
+  },
+  {
+   "tvg_id": "FoxNews.us",
+   "tvg_name": "|US| FOX NEWS CHANNEL HD"
+  },
+  {
+   "tvg_id": "Logo.us",
+   "tvg_name": "|US| LOGO HD"
+  },
+  {
+   "tvg_id": "ReelzChannel.us",
+   "tvg_name": "|US| REELZ HD"
+  },
+  {
+   "tvg_id": "WCBS.us",
+   "tvg_name": "|US| CBS NEWS HD"
+  },
+  {
+   "tvg_id": "FoxNews.us",
+   "tvg_name": "|US| FOX HD"
+  },
+  {
+   "tvg_id": "CNN.us",
+   "tvg_name": "|US| CNN HD"
+  },
+  {
+   "tvg_id": "CNNInternational.us",
+   "tvg_name": "|US| CNN INTERNATIONAL HD"
+  },
+  {
+   "tvg_id": "CW.us",
+   "tvg_name": "|US| CW HD"
+  },
+  {
+   "tvg_id": "WLFTCD3.us",
+   "tvg_name": "|US| NEWSNET"
+  },
+  {
+   "tvg_id": "News12LongIsland.us",
+   "tvg_name": "|US| NEWS 12 LONG ISLAND"
+  },
+  {
+   "tvg_id": "News12Brooklyn.us",
+   "tvg_name": "|US| NEWS 12 BROOKLYN "
+  },
+  {
+   "tvg_id": "CheddarNews.us",
+   "tvg_name": "|US| CHEDDAR BUSINESS HD"
+  },
+  {
+   "tvg_id": "BlazeTV.us",
+   "tvg_name": "|US| BLAZE TV HD"
+  },
+  {
+   "tvg_id": "BounceTV.us",
+   "tvg_name": "|US| BOUNCE TV HD"
+  },
+  {
+   "tvg_id": "Tastemade.us",
+   "tvg_name": "|US| TASTEMADE HD"
+  },
+  {
+   "tvg_id": "INSP.us",
+   "tvg_name": "|US| INSP HD"
+  },
+  {
+   "tvg_id": "FoodTV.us",
+   "tvg_name": "|US| FOOD52 HD"
+  },
+  {
+   "tvg_id": "SoYummy.us",
+   "tvg_name": "|US| SO YUMMY! HD"
+  },
+  {
+   "tvg_id": "StartTV.us",
+   "tvg_name": "|US| START TV HD"
+  },
+  {
+   "tvg_id": "MAVTV.us",
+   "tvg_name": "|US| MAV TV HD"
+  },
+  {
+   "tvg_id": "WJLP.us",
+   "tvg_name": "|US| ME TV HD"
+  },
+  {
+   "tvg_id": "Laff.us",
+   "tvg_name": "|US| LAFF TV HD"
+  },
+  {
+   "tvg_id": "DogTV.us",
+   "tvg_name": "|US| DOG TV HD"
+  },
+  {
+   "tvg_id": "WeatherChannel.us",
+   "tvg_name": "|US| THE WEATHER CHANNEL HD"
+  },
+  {
+   "tvg_id": "Accuweather.us",
+   "tvg_name": "|US| ACCU WEATHER HD"
+  },
+  {
+   "tvg_id": "BloombergTV.us",
+   "tvg_name": "|US| BLOOMBERG HD"
+  },
+  {
+   "tvg_id": "NBCUniverso.us",
+   "tvg_name": "|US| NBC UNIVERSO HD"
+  },
+  {
+   "tvg_id": "NBCNewsNOW.us",
+   "tvg_name": "|US| NBC NEWS NOW HD"
+  },
+  {
+   "tvg_id": "HLN.us",
+   "tvg_name": "|US| HLN HD"
+  },
+  {
+   "tvg_id": "CNBC.us",
+   "tvg_name": "|US| CNBC HD"
+  },
+  {
+   "tvg_id": "CNBCWorld.us",
+   "tvg_name": "|US| CNBC WORLD HD"
+  },
+  {
+   "tvg_id": "MSNBC.us",
+   "tvg_name": "|US| MSNBC HD"
+  },
+  {
+   "tvg_id": "FoxBusiness.us",
+   "tvg_name": "|US| FOX BUSINESS NETWORK HD"
+  },
+  {
+   "tvg_id": "Newsy.us",
+   "tvg_name": "|US| NEWSY HD"
+  },
+  {
+   "tvg_id": "Newsmax.us",
+   "tvg_name": "|US| NEWSMAX TV HD"
+  },
+  {
+   "tvg_id": "CheddarNews.us",
+   "tvg_name": "|US| CHEDDAR NEWS HD"
+  },
+  {
+   "tvg_id": "OneAmericaNews.us",
+   "tvg_name": "|US| ONE AMERICAN NEWS NETWORK HD"
+  },
+  {
+   "tvg_id": "BBCAmerica.us",
+   "tvg_name": "|US| BBC AMERICA HD"
+  },
+  {
+   "tvg_id": "CSPAN.us",
+   "tvg_name": "|US| C-SPAN HD"
+  },
+  {
+   "tvg_id": "CSPAN2.us",
+   "tvg_name": "|US| C-SPAN 2 HD"
+  },
+  {
+   "tvg_id": "CSPAN3.us",
+   "tvg_name": "|US| C-SPAN 3 HD"
+  },
+  {
+   "tvg_id": "ktla.us",
+   "tvg_name": "|US| KTLA 5 HD (LOS ANGELES)"
+  },
+  {
+   "tvg_id": "NewEnglandSportsNetwork.us",
+   "tvg_name": "|US| NEW ENGLAND CABLE NEWS"
+  },
+  {
+   "tvg_id": "NBCSNWashington.us",
+   "tvg_name": "|US| NBCSN HD"
+  },
+  {
+   "tvg_id": "unimas17knic.us",
+   "tvg_name": "|US| UNIMAS 17 (KNIC) SAN ANTONIO"
+  },
+  {
+   "tvg_id": "unimas28wfpa.us",
+   "tvg_name": "|US| UNIMAS 28 (WFPA) PHILADELPHIA"
+  },
+  {
+   "tvg_id": "unimas46kftr.us",
+   "tvg_name": "|US| UNIMAS 46 (KFTR) LOS ANGELES"
+  },
+  {
+   "tvg_id": "unimas50ktfd.us",
+   "tvg_name": "|US| UNIMAS 50 (KTFD) DENVER"
+  },
+  {
+   "tvg_id": "unimas60wxft.us",
+   "tvg_name": "|US| UNIMAS 60 (WXFT) CHICAGO"
+  },
+  {
+   "tvg_id": "unimas67kfth.us",
+   "tvg_name": "|US| UNIMAS 67 (KFTH) HOUSTON"
+  },
+  {
+   "tvg_id": "unimas69wami.us",
+   "tvg_name": "|US| UNIMAS 69 (WAMI) MIAMI"
+  },
+  {
+   "tvg_id": "unimas68wfut.us",
+   "tvg_name": "|US| UNIMAS HD |NEW YORK|"
+  },
+  {
+   "tvg_id": "UniMas.us",
+   "tvg_name": "|US| UNIMAS HD"
+  },
+  {
+   "tvg_id": "univision.us",
+   "tvg_name": "|US| UNIVISION HD"
+  },
+  {
+   "tvg_id": "univision14kdtv.us",
+   "tvg_name": "|US| UNIVISION 14(SAN FRANCISCO)"
+  },
+  {
+   "tvg_id": "univision19kuvs.us",
+   "tvg_name": "|US| UNIVISION 19 (KUVS) SACRAMENTO   "
+  },
+  {
+   "tvg_id": "Univision23WLTV.us",
+   "tvg_name": "|US| UNIVISION 23 |WLTV| MIAMI"
+  },
+  {
+   "tvg_id": "univision33ktvw.us",
+   "tvg_name": "|US| UNIVISION 33 (KTVW) PHOENIX  "
+  },
+  {
+   "tvg_id": "WUVG.us",
+   "tvg_name": "|US| UNIVISION 34 |WUVG| ATLANTA"
+  },
+  {
+   "tvg_id": "KMEX.us",
+   "tvg_name": "|US| UNIVISION 34 HD |LOS ANGELES|"
+  },
+  {
+   "tvg_id": "univision41wxtv.us",
+   "tvg_name": "|US| UNIVISION 41 (WXTV) NEWYORK "
+  },
+  {
+   "tvg_id": "univisionkwex.us",
+   "tvg_name": "|US| UNIVISION 41 (KWEX) SAN ANTONIO    "
+  },
+  {
+   "tvg_id": "univision45kxln.us",
+   "tvg_name": "|US| UNIVISION45 (KXLN) HOUSTON "
+  },
+  {
+   "tvg_id": "univision61wqhs.us",
+   "tvg_name": "|US| UNIVISION 61 (WQHS) CLEVELAND) "
+  },
+  {
+   "tvg_id": "univision66wgbo.us",
+   "tvg_name": "|US| UNIVISION 66 (WGBO) CHICAGO "
+  },
+  {
+   "tvg_id": "TelemundoWKAQ.us",
+   "tvg_name": "|US| TELEMUNDO HD"
+  },
+  {
+   "tvg_id": "telemundowsns.us",
+   "tvg_name": "|US| TELEMUNDO HD |CHICAGO|"
+  },
+  {
+   "tvg_id": "telemundoktaz.us",
+   "tvg_name": "|US| TELEMUNDO HD |PHOENIX|"
+  },
+  {
+   "tvg_id": "WZDC.us",
+   "tvg_name": "|US| TELEMUNDO 44 HD |WASHINGTON DC|"
+  },
+  {
+   "tvg_id": "Telemundo51WSCV.us",
+   "tvg_name": "|US| TELEMUNDO 51 HD |MIAMI|"
+  },
+  {
+   "tvg_id": "TelemundoKVEA.us",
+   "tvg_name": "|US| TELEMUNDO 52 HD [LOS ANGELES]"
+  },
+  {
+   "tvg_id": "Cinemax.us",
+   "tvg_name": "|US| CINEMAX HD (EAST)"
+  },
+  {
+   "tvg_id": "Cinemax.us",
+   "tvg_name": "|US| CINEMAX HD (WEST)"
+  },
+  {
+   "tvg_id": "MovieMax.us",
+   "tvg_name": "|US| CINEMAX MOVIEMAX HD"
+  },
+  {
+   "tvg_id": "MoreMax.us",
+   "tvg_name": "|US| CINEMAX MOREMAX HD"
+  },
+  {
+   "tvg_id": "OuterMax.us",
+   "tvg_name": "|US| CINEMAX OUTER MAX HD"
+  },
+  {
+   "tvg_id": "5StarMax.us",
+   "tvg_name": "|US| CINEMAX 5 STARMAX HD"
+  },
+  {
+   "tvg_id": "AMC.us",
+   "tvg_name": "|US| AMC HD"
+  },
+  {
+   "tvg_id": "AMC.us",
+   "tvg_name": "|US| AMC+ HD"
+  },
+  {
+   "tvg_id": "AMC.us",
+   "tvg_name": "|US| AMC PRESENTS"
+  },
+  {
+   "tvg_id": "CoziTV.us",
+   "tvg_name": "|US| COZI HD"
+  },
+  {
+   "tvg_id": "5StarMax.us",
+   "tvg_name": "|US| 5 STAR MAX  HD"
+  },
+  {
+   "tvg_id": "EPIXHits.us",
+   "tvg_name": "|US| EPIX HITS HD"
+  },
+  {
+   "tvg_id": "EPIX.us",
+   "tvg_name": "|US|  EPIX HD"
+  },
+  {
+   "tvg_id": "EPIX2.us",
+   "tvg_name": "|US| EPIX 2 HD"
+  },
+  {
+   "tvg_id": "EpixDriveIn.us",
+   "tvg_name": "|US| EPIX DRIVE IN HD"
+  },
+  {
+   "tvg_id": "FuseTV.us",
+   "tvg_name": "|US| FUSE HD"
+  },
+  {
+   "tvg_id": "FX.us",
+   "tvg_name": "|US| FX HD"
+  },
+  {
+   "tvg_id": "FX.us",
+   "tvg_name": "|US| FX WEST HD"
+  },
+  {
+   "tvg_id": "FX.us",
+   "tvg_name": "|US| FX EAST HD"
+  },
+  {
+   "tvg_id": "FXX.us",
+   "tvg_name": "|US| FXX HD"
+  },
+  {
+   "tvg_id": "FXX.us",
+   "tvg_name": "|US| FXX WEST HD"
+  },
+  {
+   "tvg_id": "FXX.us",
+   "tvg_name": "|US| FXX EAST HD"
+  },
+  {
+   "tvg_id": "HBO.us",
+   "tvg_name": "|US| HBO HD"
+  },
+  {
+   "tvg_id": "HBO.us",
+   "tvg_name": "|US| HBO HD (EAST)"
+  },
+  {
+   "tvg_id": "HBO.us",
+   "tvg_name": "|US| HBO HD (WEST)"
+  },
+  {
+   "tvg_id": "HBO2.us",
+   "tvg_name": "|US| HBO 2 HD"
+  },
+  {
+   "tvg_id": "HBO2.us",
+   "tvg_name": "|US| HBO 2 HD (EAST)"
+  },
+  {
+   "tvg_id": "HBO2.us",
+   "tvg_name": "|US| HBO 2 HD (WEST)"
+  },
+  {
+   "tvg_id": "HBOComedy.us",
+   "tvg_name": "|US| HBO COMEDY  HD"
+  },
+  {
+   "tvg_id": "HBOComedy.us",
+   "tvg_name": "|US| HBO COMEDY HD (EAST)"
+  },
+  {
+   "tvg_id": "HBOComedy.us",
+   "tvg_name": "|US| HBO COMEDY HD (WEST)"
+  },
+  {
+   "tvg_id": "HBOFamily.us",
+   "tvg_name": "|US| HBO FAMILY HD (EAST)"
+  },
+  {
+   "tvg_id": "HBOFamily.us",
+   "tvg_name": "|US| HBO FAMILY HD (WEST)"
+  },
+  {
+   "tvg_id": "HBOZone.us",
+   "tvg_name": "|US| HBO ZONE HD (EAST)"
+  },
+  {
+   "tvg_id": "HBOZone.us",
+   "tvg_name": "|US| HBO ZONE HD (WEST)"
+  },
+  {
+   "tvg_id": "HBOLatino.us",
+   "tvg_name": "|US| HBO LATINO HD (EAST)"
+  },
+  {
+   "tvg_id": "HBOLatino.us",
+   "tvg_name": "|US| HBO LATINO HD (WEST)"
+  },
+  {
+   "tvg_id": "HBOSignature.us",
+   "tvg_name": "|US| HBO SIGNATURE HD (EAST)"
+  },
+  {
+   "tvg_id": "HBOSignature.us",
+   "tvg_name": "|US| HBO SIGNATURE HD (WEST)"
+  },
+  {
+   "tvg_id": "Hallmark.us",
+   "tvg_name": "|US| HALLMARK CHANNEL HD"
+  },
+  {
+   "tvg_id": "HallmarkDrama.us",
+   "tvg_name": "|US| HALLMARK DRAMA HD"
+  },
+  {
+   "tvg_id": "HallmarkMoviesMysteries.us",
+   "tvg_name": "|US| HALLMARK MOVIES & MYSTERIES HD"
+  },
+  {
+   "tvg_id": "MOVIEplex.us",
+   "tvg_name": "|US| MOVIE PLEX HD"
+  },
+  {
+   "tvg_id": "RETROplex.us",
+   "tvg_name": "|US| RETRO PLEX FHD"
+  },
+  {
+   "tvg_id": "INDIEplex.us",
+   "tvg_name": "|US| INDIE PLEX HD"
+  },
+  {
+   "tvg_id": "IndependentFilmChannel.us",
+   "tvg_name": "|US| IFC  HD"
+  },
+  {
+   "tvg_id": "Syfy.us",
+   "tvg_name": "|US| SYFY HD"
+  },
+  {
+   "tvg_id": "Syfy.us",
+   "tvg_name": "|US| SYFY HD (EAST)"
+  },
+  {
+   "tvg_id": "Syfy.us",
+   "tvg_name": "|US| SYFY HD (WEST)"
+  },
+  {
+   "tvg_id": "SundanceTV.us",
+   "tvg_name": "|US| SUNDANCE  HD"
+  },
+  {
+   "tvg_id": "TNT.us",
+   "tvg_name": "|US| TNT HD"
+  },
+  {
+   "tvg_id": "TNT.us",
+   "tvg_name": "|US| TNT HD (EAST)"
+  },
+  {
+   "tvg_id": "TNT.us",
+   "tvg_name": "|US| TNT HD (WEST)"
+  },
+  {
+   "tvg_id": "TVLandEast.us",
+   "tvg_name": "|US| TV LAND  HD"
+  },
+  {
+   "tvg_id": "Starz.us",
+   "tvg_name": "|US| STARZ HD (EAST)"
+  },
+  {
+   "tvg_id": "Starz.us",
+   "tvg_name": "|US| STARZ HD (WEST)"
+  },
+  {
+   "tvg_id": "StarzCinema.us",
+   "tvg_name": "|US| STARZ CINEMA HD (EAST)"
+  },
+  {
+   "tvg_id": "StarzCinema.us",
+   "tvg_name": "|US| STARZ CINEMA HD (WEST)"
+  },
+  {
+   "tvg_id": "StarzEncore.us",
+   "tvg_name": "|US| STARZ ENCORE HD (EAST)"
+  },
+  {
+   "tvg_id": "StarzEncore.us",
+   "tvg_name": "|US| STARZ ENCORE HD (WEST)"
+  },
+  {
+   "tvg_id": "StarzEncoreBlack.us",
+   "tvg_name": "|US| STARZ ENCORE BLACK  FHD"
+  },
+  {
+   "tvg_id": "StarzEncoreClassics.us",
+   "tvg_name": "|US| STARZ ENCORE CLASSIC HD"
+  },
+  {
+   "tvg_id": "StarzEncoreFamily.us",
+   "tvg_name": "|US| STARZ ENCORE FAMILY FHD"
+  },
+  {
+   "tvg_id": "StarzEncoreAction.us",
+   "tvg_name": "|US| STARZ ENCORE ACTION HD"
+  },
+  {
+   "tvg_id": "StarzEncoreWesterns.us",
+   "tvg_name": "|US| STARZ ENCORE WESTERNS FHD"
+  },
+  {
+   "tvg_id": "StarzEncoreEspanol.us",
+   "tvg_name": "|US| STARZ ENCORE ESPANOL HD (EAST)"
+  },
+  {
+   "tvg_id": "StarzEncoreEspanol.us",
+   "tvg_name": "|US| STARZ ENCORE ESPANOL HD (WEST)"
+  },
+  {
+   "tvg_id": "StarzEncoreSuspense.us",
+   "tvg_name": "|US| STARZ ENCORE SUSPENSE HD"
+  },
+  {
+   "tvg_id": "StarzKidsFamily.us",
+   "tvg_name": "|US| STARZ KIDS AND FAMILY HD"
+  },
+  {
+   "tvg_id": "StarzInBlack.us",
+   "tvg_name": "|US| STARZ IN BLACK HD"
+  },
+  {
+   "tvg_id": "StarzComedy.us",
+   "tvg_name": "|US| STARZ COMEDY HD"
+  },
+  {
+   "tvg_id": "Showtime.us",
+   "tvg_name": "|US| SHOWTIME EAST HD"
+  },
+  {
+   "tvg_id": "showtimewest.us",
+   "tvg_name": "|US| SHOWTIME WEST HD"
+  },
+  {
+   "tvg_id": "Showtime2.us",
+   "tvg_name": "|US| SHOWTIME 2 HD"
+  },
+  {
+   "tvg_id": "ShowtimeXBet.us",
+   "tvg_name": "|US| SHOWTIME BET HD"
+  },
+  {
+   "tvg_id": "ShowtimeExtreme.us",
+   "tvg_name": "|US| SHOWTIME EXTREME HD EAST"
+  },
+  {
+   "tvg_id": "ShowtimeExtreme.us",
+   "tvg_name": "|US| SHOWTIME EXTREME HD WEST"
+  },
+  {
+   "tvg_id": "ShowtimeFamilyZone.us",
+   "tvg_name": "|US| SHOWTIME FAMILY ZONE HD"
+  },
+  {
+   "tvg_id": "ShowtimeWomen.us",
+   "tvg_name": "|US| SHOWTIME WOMEN HD"
+  },
+  {
+   "tvg_id": "ShowtimeNext.us",
+   "tvg_name": "|US| SHOWTIME NEXT HD"
+  },
+  {
+   "tvg_id": "ShowtimeShowcase.us",
+   "tvg_name": "|US| SHOWTIME SHOWCASE HD"
+  },
+  {
+   "tvg_id": "LifetimeNetwork.us",
+   "tvg_name": "|US| LIFETIME MOVIE NETWORK HD"
+  },
+  {
+   "tvg_id": "HeroesAndIconsTV.us",
+   "tvg_name": "|US| HEROES AND ICONS"
+  },
+  {
+   "tvg_id": "Grit.us",
+   "tvg_name": "|US| GRIT TV HD"
+  },
+  {
+   "tvg_id": "MOVIEplex.us",
+   "tvg_name": "|US| MOVIE PLEX HD"
+  },
+  {
+   "tvg_id": "SonyMovieChannel.us",
+   "tvg_name": "|US| SONY MOVIE CHANNEL HD"
+  },
+  {
+   "tvg_id": "TurnerClassicMovies.us",
+   "tvg_name": "|US| TURNER CLASSIC MOVIES HD"
+  },
+  {
+   "tvg_id": "ShowtimeXBet.us",
+   "tvg_name": "|US| SHO x BET HD"
+  },
+  {
+   "tvg_id": "HDNetMovies.us",
+   "tvg_name": "|US| HDNET MOVIES HD"
+  },
+  {
+   "tvg_id": "aande.us",
+   "tvg_name": "|US| A&E HD"
+  },
+  {
+   "tvg_id": "adultswim.us",
+   "tvg_name": "|US| ADULT SWIM HD"
+  },
+  {
+   "tvg_id": "AmericanHeroesChannel.us",
+   "tvg_name": "|US| AMERICAN HEROES CHANNEL HD"
+  },
+  {
+   "tvg_id": "awe.us",
+   "tvg_name": "|US| AWE HD"
+  },
+  {
+   "tvg_id": "bouncetv.us",
+   "tvg_name": "|US| BOUNCE TV HD"
+  },
+  {
+   "tvg_id": "bet.us",
+   "tvg_name": "|US| BET HD (EAST)"
+  },
+  {
+   "tvg_id": "BET.us",
+   "tvg_name": "|US| BET HD (WEST)"
+  },
+  {
+   "tvg_id": "bether.us",
+   "tvg_name": "|US| BET HER HD"
+  },
+  {
+   "tvg_id": "CMT.us",
+   "tvg_name": "|US| CMT HD"
+  },
+  {
+   "tvg_id": "ComedyCentral.us",
+   "tvg_name": "|US| COMEDY CENTRAL HD"
+  },
+  {
+   "tvg_id": "comedycentral.us",
+   "tvg_name": "|US| COMEDY CENTRAL HD (WEST)"
+  },
+  {
+   "tvg_id": "cookingchannel.us",
+   "tvg_name": "|US| COOKING CHANNEL HD"
+  },
+  {
+   "tvg_id": "courttvmystery.us",
+   "tvg_name": "|US| COURT TV HD"
+  },
+  {
+   "tvg_id": "dogtv.us",
+   "tvg_name": "|US| DOG TV HD"
+  },
+  {
+   "tvg_id": "eentertainment.us",
+   "tvg_name": "|US| E! ENTERTAINMENT"
+  },
+  {
+   "tvg_id": "eentertainment.us",
+   "tvg_name": "|US| E! ENTERTAINMENT HD (EAST)"
+  },
+  {
+   "tvg_id": "eentertainment.us",
+   "tvg_name": "|US| E! ENTERTAINMENT HD (WEST)"
+  },
+  {
+   "tvg_id": "fm.us",
+   "tvg_name": "|US| FM HD"
+  },
+  {
+   "tvg_id": "PopTV.us",
+   "tvg_name": "|US| POP HD"
+  },
+  {
+   "tvg_id": "foodnetwork.us",
+   "tvg_name": "|US| FOOD NETWORK HD"
+  },
+  {
+   "tvg_id": "Freeform.us",
+   "tvg_name": "|US| FREEFORM HD |EAST|"
+  },
+  {
+   "tvg_id": "Freeform.us",
+   "tvg_name": "|US| FREEFORM HD (EAST)"
+  },
+  {
+   "tvg_id": "freeform.us",
+   "tvg_name": "|US| FREEFORM HD (WEST)"
+  },
+  {
+   "tvg_id": "gameshownetwork.us",
+   "tvg_name": "|US| GAME SHOW NETWORK HD"
+  },
+  {
+   "tvg_id": "GemShoppingNetwork.us",
+   "tvg_name": "|US| GEM SHOPPING NETWORK"
+  },
+  {
+   "tvg_id": "Hallmark.us",
+   "tvg_name": "|US| HALLMARK CHANNEL HD"
+  },
+  {
+   "tvg_id": "HGTV.us",
+   "tvg_name": "|US| HGTV HD"
+  },
+  {
+   "tvg_id": "HGTV.us",
+   "tvg_name": "|US| HGTV HD (EAST)"
+  },
+  {
+   "tvg_id": "HGTV.us",
+   "tvg_name": "|US| HGTV HD (WEST)"
+  },
+  {
+   "tvg_id": "HomeShoppingNetwork.us",
+   "tvg_name": "|US| HSN HD"
+  },
+  {
+   "tvg_id": "hsn2.us",
+   "tvg_name": "|US| HSN 2 HD"
+  },
+  {
+   "tvg_id": "lifetimemovies.us",
+   "tvg_name": "|US| LIFETIME HD"
+  },
+  {
+   "tvg_id": "mtv.us",
+   "tvg_name": "|US| MTV HD"
+  },
+  {
+   "tvg_id": "qvc.us",
+   "tvg_name": "|US| QVC HD"
+  },
+  {
+   "tvg_id": "qvc2.us",
+   "tvg_name": "|US| QVC 2 HD"
+  },
+  {
+   "tvg_id": "QVC3.us",
+   "tvg_name": "|US| QVC 3 HD"
+  },
+  {
+   "tvg_id": "Revolt.us",
+   "tvg_name": "|US| REVOLT HD"
+  },
+  {
+   "tvg_id": "TheCowboyChannel.us",
+   "tvg_name": "|US| COWBOY CHANNEL HD"
+  },
+  {
+   "tvg_id": "TLC.us",
+   "tvg_name": "|US| TLC HD"
+  },
+  {
+   "tvg_id": "TNT.us",
+   "tvg_name": "|US| TNT WEST  HD"
+  },
+  {
+   "tvg_id": "truTV.us",
+   "tvg_name": "|US| TRU TV HD"
+  },
+  {
+   "tvg_id": "truTV.us",
+   "tvg_name": "|US| TRU TV HD (EAST)"
+  },
+  {
+   "tvg_id": "truTV.us",
+   "tvg_name": "|US| TRU TV HD (WEST)"
+  },
+  {
+   "tvg_id": "VH1.us",
+   "tvg_name": "|US| VH1 HD"
+  },
+  {
+   "tvg_id": "viceland.us",
+   "tvg_name": "|US| VICELAND HD"
+  },
+  {
+   "tvg_id": "WeTV.us",
+   "tvg_name": "|US| WE TV HD"
+  },
+  {
+   "tvg_id": "WGNAmerica.us",
+   "tvg_name": "|US| WGN AMERICA HD"
+  },
+  {
+   "tvg_id": "WGN9Chicago.us",
+   "tvg_name": "|US| WGN 9 CHICAGO"
+  },
+  {
+   "tvg_id": "SmithsonianChannel.us",
+   "tvg_name": "|US| SMITHSONIAN HD (EAST)"
+  },
+  {
+   "tvg_id": "SmithsonianChannel.us",
+   "tvg_name": "|US| SMITHSONIAN HD (WEST)"
+  },
+  {
+   "tvg_id": "TVLandEast.us",
+   "tvg_name": "|US| TV LAND HD (EAST)"
+  },
+  {
+   "tvg_id": "TVLandWest.us",
+   "tvg_name": "|US| TV LAND HD (WEST)"
+  },
+  {
+   "tvg_id": "TBS.us",
+   "tvg_name": "|US| TBS HD (EAST)"
+  },
+  {
+   "tvg_id": "TBS.us",
+   "tvg_name": "|US| TBS HD (WEST)"
+  },
+  {
+   "tvg_id": "MGM.us",
+   "tvg_name": "|US| MGM HD"
+  },
+  {
+   "tvg_id": "CoziTV.us",
+   "tvg_name": "|US| COZI TV"
+  },
+  {
+   "tvg_id": "BUZZR.us",
+   "tvg_name": "|US| BUZZR"
+  },
+  {
+   "tvg_id": "FuseTV.us",
+   "tvg_name": "|US| FUSE HD"
+  },
+  {
+   "tvg_id": "FYI.us",
+   "tvg_name": "|US| FYI HD"
+  },
+  {
+   "tvg_id": "Comet.us",
+   "tvg_name": "|US| COMET TV HD"
+  },
+  {
+   "tvg_id": "ComedyTV.us",
+   "tvg_name": "|US| COMEDY TV HD"
+  },
+  {
+   "tvg_id": "greatamericancountry.us",
+   "tvg_name": "|US| GREAT AMERICAN COUNTRY HD"
+  },
+  {
+   "tvg_id": "PeopleAreAwesome.us",
+   "tvg_name": "|US| PEOPLE TV HD"
+  },
+  {
+   "tvg_id": "SundanceTV.us",
+   "tvg_name": "|US| SUNDANCE TV HD"
+  },
+  {
+   "tvg_id": "AandE.us",
+   "tvg_name": "|US| A&E HD"
+  },
+  {
+   "tvg_id": "AspireTV.us",
+   "tvg_name": "|US| ASPIRE TV HD"
+  },
+  {
+   "tvg_id": "bravo.us",
+   "tvg_name": "|US| BRAVO HD (EAST)"
+  },
+  {
+   "tvg_id": "bravowest.us",
+   "tvg_name": "|US| BRAVO HD (WEST)"
+  },
+  {
+   "tvg_id": "GameShowNetwork.us",
+   "tvg_name": "|US| GSN HD"
+  },
+  {
+   "tvg_id": "IndependentFilmChannel.us",
+   "tvg_name": "|US| IFC HD"
+  },
+  {
+   "tvg_id": "ION.us",
+   "tvg_name": "|US| ION TV HD"
+  },
+  {
+   "tvg_id": "JusticeCentral.us",
+   "tvg_name": "|US| JUSTICE CENTRAL HD"
+  },
+  {
+   "tvg_id": "OutsideTV.us",
+   "tvg_name": "|US| OUTSIDE TV HD"
+  },
+  {
+   "tvg_id": "Ovation.us",
+   "tvg_name": "|US| OVATION HD"
+  },
+  {
+   "tvg_id": "Oxygen.us",
+   "tvg_name": "|US| OXYGEN HD"
+  },
+  {
+   "tvg_id": "RFDTV.us",
+   "tvg_name": "|US| RFD-TV HD"
+  },
+  {
+   "tvg_id": "PursuitUP.us",
+   "tvg_name": "|US| UP HD"
+  },
+  {
+   "tvg_id": "USANetwork.us",
+   "tvg_name": "|US| USA NETWORK HD"
+  },
+  {
+   "tvg_id": "TVOne.us",
+   "tvg_name": "|US| TV ONE HD"
+  },
+  {
+   "tvg_id": "AntennaTV.us",
+   "tvg_name": "|US| ANTENNA TV"
+  },
+  {
+   "tvg_id": "GemShoppingNetwork.us",
+   "tvg_name": "|US| GEM SHOPPING NETWORK"
+  },
+  {
+   "tvg_id": "Galavision.us",
+   "tvg_name": "|US| GALAVISION HD"
+  },
+  {
+   "tvg_id": "InvestigationDiscovery.us",
+   "tvg_name": "|US| DISCOVERY INVESTIGATION HD"
+  },
+  {
+   "tvg_id": "CrimeInvestigation.us",
+   "tvg_name": "|US| CRIME AND INVESTIGATION FHD"
+  },
+  {
+   "tvg_id": "HistoryChannel.us",
+   "tvg_name": "|US| HISTORY CHANNEL HD"
+  },
+  {
+   "tvg_id": "animalplanet.us",
+   "tvg_name": "|US| ANIMAL PLANET HD"
+  },
+  {
+   "tvg_id": "AnimalPlanet.us",
+   "tvg_name": "|US| ANIMAL PLANET HD (EAST)"
+  },
+  {
+   "tvg_id": "AnimalPlanet.us",
+   "tvg_name": "|US| ANIMAL PLANET HD (WEST)"
+  },
+  {
+   "tvg_id": "OutdoorChannel.us",
+   "tvg_name": "|US| OUTDOOR CHANNEL HD"
+  },
+  {
+   "tvg_id": "PursuitChannel.us",
+   "tvg_name": "|US| PURSUIT CHANNEL HD"
+  },
+  {
+   "tvg_id": "AspireTV.us",
+   "tvg_name": "|US| ASPIRE FHD"
+  },
+  {
+   "tvg_id": "DestinationAmerica.us",
+   "tvg_name": "|US| DESTINATION AMERICA HD"
+  },
+  {
+   "tvg_id": "OutsideTV.us",
+   "tvg_name": "|US| OUTSIDE TV"
+  },
+  {
+   "tvg_id": "worldfishingnetwork.us",
+   "tvg_name": "|US| WORLD FISHING NETWORK HD"
+  },
+  {
+   "tvg_id": "DiscoveryChannel.us",
+   "tvg_name": "|US| DISCOVERY HD (EAST)"
+  },
+  {
+   "tvg_id": "DiscoveryChannel.us",
+   "tvg_name": "|US| DISCOVERY HD (WEST)"
+  },
+  {
+   "tvg_id": "Science.us",
+   "tvg_name": "|US| DISCOVERY SCIENCE HD"
+  },
+  {
+   "tvg_id": "DiscoveryFamily.us",
+   "tvg_name": "|US| DISCOVERY FAMILY"
+  },
+  {
+   "tvg_id": "DiscoveryLife.us",
+   "tvg_name": "|US| DISCOVERY LIFE HD"
+  },
+  {
+   "tvg_id": "discoveryvelocity.us",
+   "tvg_name": "|US| DISCOVERY VELOCITY HD"
+  },
+  {
+   "tvg_id": "NatGeoWild.us",
+   "tvg_name": "|US| NAT GEO WILD HD"
+  },
+  {
+   "tvg_id": "NatGeo.us",
+   "tvg_name": "|US| NAT GEO  HD"
+  },
+  {
+   "tvg_id": "AmericanHeroesChannel.us",
+   "tvg_name": "|US| AHC HD"
+  },
+  {
+   "tvg_id": "FYI.us",
+   "tvg_name": "|US| FYI"
+  },
+  {
+   "tvg_id": "TravelChannel.us",
+   "tvg_name": "|US| TRAVEL CHANNEL HD"
+  },
+  {
+   "tvg_id": "MilitaryHistory.us",
+   "tvg_name": "|US| HISTORY MILITARY"
+  },
+  {
+   "tvg_id": "ParamountNetwork.us",
+   "tvg_name": "|US| PARAMOUNT NETWORK HD"
+  },
+  {
+   "tvg_id": "LawAndCrime.us",
+   "tvg_name": "|US| LAW & CRIME"
+  },
+  {
+   "tvg_id": "TFD.us",
+   "tvg_name": "|US| THE FILM DETECTIVE HD"
+  },
+  {
+   "tvg_id": "AmericanHeroesChannel.us",
+   "tvg_name": "|US| AMERICAN HEROES CHANNEL HD"
+  },
+  {
+   "tvg_id": "doityourselfnetwork.us",
+   "tvg_name": "|US| DIY NETWORK HD"
+  },
+  {
+   "tvg_id": "ACCNetwork.us",
+   "tvg_name": "|US| ACC NETWORK HD"
+  },
+  {
+   "tvg_id": "BigTenNetwork.us",
+   "tvg_name": "|US| BIG TEN NETWORK"
+  },
+  {
+   "tvg_id": "CBSSportsNetwork.us",
+   "tvg_name": "|US| CBS SPORTS NETWORK HD"
+  },
+  {
+   "tvg_id": "TheFightNetwork.us",
+   "tvg_name": "|US| FIGHT NETWORK HD"
+  },
+  {
+   "tvg_id": "GolfChannel.us",
+   "tvg_name": "|US| GOLF CHANNEL HD"
+  },
+  {
+   "tvg_id": "MotorTrend.us",
+   "tvg_name": "|US| MOTORTREND HD"
+  },
+  {
+   "tvg_id": "MadisonSquareGarden.us",
+   "tvg_name": "|US| MSG HD"
+  },
+  {
+   "tvg_id": "MadisonSquareGardenPlus.us",
+   "tvg_name": "|US| MSG PLUS HD"
+  },
+  {
+   "tvg_id": "MadisonSquareGarden2.us",
+   "tvg_name": "|US| MSG 2 HD"
+  },
+  {
+   "tvg_id": "MadisonSquareGarden2.us",
+   "tvg_name": "|US| MSG 2 PLUS HD"
+  },
+  {
+   "tvg_id": "NBATV.us",
+   "tvg_name": "|US| NBA TV HD"
+  },
+  {
+   "tvg_id": "mlbstrikezone.us",
+   "tvg_name": "|US| MLB STRIKEZONE HD"
+  },
+  {
+   "tvg_id": "willowcricket.us",
+   "tvg_name": "|US| WILLOW CRICKET HD"
+  },
+  {
+   "tvg_id": "mlbnetwork.us",
+   "tvg_name": "|US| MLB NETWORK ALT HD"
+  },
+  {
+   "tvg_id": "NFLNetwork.us",
+   "tvg_name": "|US| NFL NETWORK HD"
+  },
+  {
+   "tvg_id": "ESPN2.us",
+   "tvg_name": "|US| ESPN HD"
+  },
+  {
+   "tvg_id": "NFLRedZone.us",
+   "tvg_name": "|US| NFL REDZONE HD"
+  },
+  {
+   "tvg_id": "RFDTV.us",
+   "tvg_name": "|US| RFD TV"
+  },
+  {
+   "tvg_id": "yesnetwork.us",
+   "tvg_name": "|US| YES NETWORK HD"
+  },
+  {
+   "tvg_id": "nbcsportsbayarea.us",
+   "tvg_name": "|US| NBC SPORTS HD |BAY AREA|"
+  },
+  {
+   "tvg_id": "nbcsportsboston.us",
+   "tvg_name": "|US| NBC SPORTS HD |BOSTON|"
+  },
+  {
+   "tvg_id": "nbcsportschicagoplus.us",
+   "tvg_name": "|US| NBC SPORTS HD |CHICAGO|"
+  },
+  {
+   "tvg_id": "nbcsportsphiladelphia.us",
+   "tvg_name": "|US| NBC SPORTS HD |PHILLY|"
+  },
+  {
+   "tvg_id": "nbatv.us",
+   "tvg_name": "|US| NBA TV HD"
+  },
+  {
+   "tvg_id": "marqueesportsnetwork.us",
+   "tvg_name": "|US| MARQUEE SPORTS NETWORK HD"
+  },
+  {
+   "tvg_id": "cbssportsnetworkusa.us",
+   "tvg_name": "|US| CBS SPORTS NETWORK HD"
+  },
+  {
+   "tvg_id": "foxdeportes.us",
+   "tvg_name": "|US| FOX DEPORTES HD"
+  },
+  {
+   "tvg_id": "tycsports.us",
+   "tvg_name": "|US| TYC SPORTS HD"
+  },
+  {
+   "tvg_id": "newenglandsportsnetworkplus.us",
+   "tvg_name": "|US| NESN PLUS HD"
+  },
+  {
+   "tvg_id": "newenglandcablenews.us",
+   "tvg_name": "|US| NECN HD"
+  },
+  {
+   "tvg_id": "wwe.us",
+   "tvg_name": "|US| WWE NETWORK HD"
+  },
+  {
+   "tvg_id": "foxsports1.us",
+   "tvg_name": "|US| FOX SPORTS 1 HD"
+  },
+  {
+   "tvg_id": "foxsports2.us",
+   "tvg_name": "|US| FOX SPORTS 2 HD"
+  },
+  {
+   "tvg_id": "GolfChannel.us",
+   "tvg_name": "|US| NBC GOLF HD"
+  },
+  {
+   "tvg_id": "PAC12Washington.us",
+   "tvg_name": "|US| PAC-12 HD |WASHINGTON|"
+  },
+  {
+   "tvg_id": "beINSportsLaLiga.us",
+   "tvg_name": "|US| BEIN SPORTS LALIGA HD"
+  },
+  {
+   "tvg_id": "beINSPORTSXTRA.us",
+   "tvg_name": "|US| BEIN SPORTS XTRA"
+  },
+  {
+   "tvg_id": "beINSports4.us",
+   "tvg_name": "|US| BEIN SPORTS 4 HD"
+  },
+  {
+   "tvg_id": "beINSports5.us",
+   "tvg_name": "|US| BEIN SPORTS 5 HD"
+  },
+  {
+   "tvg_id": "beINSports6.us",
+   "tvg_name": "|US| BEIN SPORTS 6 HD"
+  },
+  {
+   "tvg_id": "beINSports7.us",
+   "tvg_name": "|US| BEIN SPORTS 7 HD"
+  },
+  {
+   "tvg_id": "beINSports8.us",
+   "tvg_name": "|US| BEIN SPORTS 8 HD"
+  },
+  {
+   "tvg_id": "sportsnetnewyork.us",
+   "tvg_name": "|US| SPORTSNET NEW YORK"
+  },
+  {
+   "tvg_id": "TennisChannel.us",
+   "tvg_name": "|Tennis CHANNEL HD:"
+  },
+  {
+   "tvg_id": "nhlnetwork.us",
+   "tvg_name": "|US| NHL NETWORK HD"
+  },
+  {
+   "tvg_id": "MTV.us",
+   "tvg_name": "|US| MTV HD"
+  },
+  {
+   "tvg_id": "MTV2.us",
+   "tvg_name": "|US| MTV 2 HD"
+  },
+  {
+   "tvg_id": "MTVLive.us",
+   "tvg_name": "|US| MTV LIVE HD"
+  },
+  {
+   "tvg_id": "MTVU.us",
+   "tvg_name": "|US| MTV U"
+  },
+  {
+   "tvg_id": "MTVClassic.us",
+   "tvg_name": "|US| MTV CLASSIC"
+  },
+  {
+   "tvg_id": "VH1.us",
+   "tvg_name": "|US| VH1 HD"
+  },
+  {
+   "tvg_id": "CMT.us",
+   "tvg_name": "|US| CMT HD"
+  },
+  {
+   "tvg_id": "NickMusic.us",
+   "tvg_name": "|US| NICK MUSIC"
+  },
+  {
+   "tvg_id": "BETjams.us",
+   "tvg_name": "|US| BET JAMS"
+  },
+  {
+   "tvg_id": "BETSoul.us",
+   "tvg_name": "|US| BET SOUL"
+  },
+  {
+   "tvg_id": "circletv.us",
+   "tvg_name": "|US| CIRCLE HD"
+  }
+ ]
+}
