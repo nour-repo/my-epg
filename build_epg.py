@@ -102,6 +102,7 @@ def process_country(country, urls, playlist_index):
             continue
 
         channels = extract_channels(epg_content)
+        print(f"[{country}] {url.rsplit('/', 1)[-1]}: parsed {len(channels)} channel entries from source")
         id_map = {}  # epg_id -> target tvg_id, for this source only
         for block, epg_id, disp in channels:
             norm = normalize(disp)
