@@ -143,6 +143,35 @@ def process_country(country, urls, playlist_index):
                 print(f"[{country}] {url.rsplit('/', 1)[-1]}: +{len(fuzzy_id_map)} more via fuzzy match "
                       f"({len(remaining)} still unmatched)")
 
+        # Pass 3 (substring fallback): catches cases like playlist "WCBS"
+        # matching an EPG display name like "WCBS New York (CBS)" — names
+        # that contain the target as a chunk but aren't textually similar
+        # enough for the fuzzy pass above. Guarded by a minimum length to
+        # avoid short/ambiguous names matching too broadly.
+        if remaining:
+            substring_id_map = {}
+            for block, epg_id, disp in channels:
+                if epg_id in id_map:
+                    continue
+                norm_disp = normalize(disp)
+                if not norm_disp:
+                    continue
+                for norm_name, target in list(remaining.items()):
+                    if len(norm_name) < 4:
+                        continue  # too short, too likely to false-match
+                    if target in seen_targets:
+                        continue
+                    if norm_name in norm_disp:
+                        substring_id_map[epg_id] = target
+                        seen_targets.add(target)
+                        channel_out.append(block.replace(f'id="{epg_id}"', f'id="{target}"', 1))
+                        del remaining[norm_name]
+                        break
+            if substring_id_map:
+                programme_out.extend(remap_and_extract_programmes(epg_content, substring_id_map))
+                print(f"[{country}] {url.rsplit('/', 1)[-1]}: +{len(substring_id_map)} more via substring match "
+                      f"({len(remaining)} still unmatched)")
+
     total_matched = len(playlist_index) - len(remaining)
     print(f"[{country}] TOTAL: {total_matched} of {len(playlist_index)} playlist channels matched")
     if remaining:
