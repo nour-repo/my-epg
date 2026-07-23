@@ -12,16 +12,28 @@ Requires: channels_reference.json in the same directory (tvg-id/tvg-name pairs, 
 import re
 import json
 import gzip
+import difflib
 import urllib.request
 from collections import defaultdict
 
+# Multiple sources per country, tried in order. Later sources only fill
+# gaps left by earlier ones (a channel matched once is never re-matched).
 SOURCES = {
-    "NL": "https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz",
-    "UK": "https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz",
-    "USA": "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz",
+    "NL": [
+        "https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz",
+    ],
+    "UK": [
+        "https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz",
+    ],
+    "USA": [
+        "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz",
+        "https://epgshare01.online/epgshare01/epg_ripper_US_SPORTS1.xml.gz",
+        "https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz",
+    ],
 }
 
 OUTPUT_FILE = "combined_epg.xml"
+FUZZY_THRESHOLD = 0.88  # 0-1, higher = stricter. Only used as a last resort.
 
 
 def normalize(name):
@@ -49,53 +61,95 @@ def build_playlist_index(channel_list):
     return index
 
 
-def process_country(country, url, playlist_index):
-    print(f"[{country}] downloading {url}")
-    epg_content = download_epg(url)
-
+def extract_channels(epg_content):
+    """Returns list of (block, epg_id, display_name)."""
     channel_blocks = re.findall(r'(<channel id="([^"]+)">.*?</channel>)', epg_content, re.DOTALL)
-
-    raw_matches = []  # (epg_id, target_tvg_id, display_name)
+    out = []
     for block, epg_id in channel_blocks:
         m = re.search(r'<display-name[^>]*>([^<]+)</display-name>', block)
-        if not m:
-            continue
-        norm = normalize(m.group(1))
-        if norm in playlist_index:
-            raw_matches.append((epg_id, playlist_index[norm], m.group(1)))
+        if m:
+            out.append((block, epg_id, m.group(1)))
+    return out
 
-    # Dedupe: if multiple epg_ids map to the same target tvg_id, keep the
-    # one whose display name is shortest (closest literal match), drop rest.
-    by_target = defaultdict(list)
-    for epg_id, target, disp in raw_matches:
-        by_target[target].append((epg_id, disp))
 
-    final_matches = {}  # epg_id -> target tvg_id
-    for target, entries in by_target.items():
-        entries_sorted = sorted(entries, key=lambda x: len(x[1]))
-        final_matches[entries_sorted[0][0]] = target
-
-    print(f"[{country}] matched {len(final_matches)} of {len(channel_blocks)} EPG channels "
-          f"(playlist has {len(playlist_index)} unique {country} channels)")
-
-    # Build remapped channel blocks
-    channel_out = []
-    for block, epg_id in channel_blocks:
-        if epg_id in final_matches:
-            new_id = final_matches[epg_id]
-            channel_out.append(block.replace(f'id="{epg_id}"', f'id="{new_id}"', 1))
-
-    # Build remapped programme blocks
+def remap_and_extract_programmes(epg_content, id_map):
+    """id_map: epg_id -> target tvg_id. Returns list of remapped <programme> blocks."""
     prog_pattern = re.compile(r'<programme([^>]*?)channel="([^"]+)"([^>]*)>(.*?)</programme>', re.DOTALL)
     prog_out = []
     for m in prog_pattern.finditer(epg_content):
         pre, chan, post, body = m.groups()
-        if chan in final_matches:
-            new_id = final_matches[chan]
+        if chan in id_map:
+            new_id = id_map[chan]
             prog_out.append(f'<programme{pre}channel="{new_id}"{post}>{body}</programme>')
+    return prog_out
 
-    print(f"[{country}] {len(prog_out)} programme entries carried over")
-    return channel_out, prog_out
+
+def process_country(country, urls, playlist_index):
+    remaining = dict(playlist_index)  # norm_name -> tvg_id, shrinks as we match
+    channel_out = []
+    programme_out = []
+    seen_targets = set()
+
+    # Pass 1: exact normalized-name match, one source at a time, filling gaps
+    for url in urls:
+        if not remaining:
+            break
+        print(f"[{country}] downloading {url}")
+        try:
+            epg_content = download_epg(url)
+        except Exception as e:
+            print(f"[{country}] FAILED to download {url}: {e}")
+            continue
+
+        channels = extract_channels(epg_content)
+        id_map = {}  # epg_id -> target tvg_id, for this source only
+        for block, epg_id, disp in channels:
+            norm = normalize(disp)
+            if norm in remaining:
+                target = remaining[norm]
+                if target not in seen_targets:
+                    id_map[epg_id] = target
+                    seen_targets.add(target)
+                    channel_out.append(block.replace(f'id="{epg_id}"', f'id="{target}"', 1))
+                del remaining[norm]
+
+        matched_this_source = len(id_map)
+        programme_out.extend(remap_and_extract_programmes(epg_content, id_map))
+        print(f"[{country}] {url.rsplit('/', 1)[-1]}: +{matched_this_source} channels "
+              f"({len(remaining)} still unmatched)")
+
+        # Pass 2 (fuzzy fallback): for names that didn't match exactly, try
+        # close matches against whatever's left unmatched after this source.
+        if remaining:
+            fuzzy_id_map = {}
+            unmatched_norms = list(remaining.keys())
+            for block, epg_id, disp in channels:
+                if epg_id in id_map:
+                    continue  # already used above
+                norm = normalize(disp)
+                if not norm:
+                    continue
+                best = difflib.get_close_matches(norm, unmatched_norms, n=1, cutoff=FUZZY_THRESHOLD)
+                if best:
+                    target = remaining[best[0]]
+                    if target not in seen_targets:
+                        fuzzy_id_map[epg_id] = target
+                        seen_targets.add(target)
+                        channel_out.append(block.replace(f'id="{epg_id}"', f'id="{target}"', 1))
+                        del remaining[best[0]]
+                        unmatched_norms.remove(best[0])
+            if fuzzy_id_map:
+                programme_out.extend(remap_and_extract_programmes(epg_content, fuzzy_id_map))
+                print(f"[{country}] {url.rsplit('/', 1)[-1]}: +{len(fuzzy_id_map)} more via fuzzy match "
+                      f"({len(remaining)} still unmatched)")
+
+    total_matched = len(playlist_index) - len(remaining)
+    print(f"[{country}] TOTAL: {total_matched} of {len(playlist_index)} playlist channels matched")
+    if remaining:
+        sample = list(remaining.values())[:15]
+        print(f"[{country}] still unmatched (sample of {len(remaining)}): {sample}")
+
+    return channel_out, programme_out
 
 
 def main():
@@ -106,12 +160,12 @@ def main():
     all_programme_blocks = []
     seen_ids = set()
 
-    for country, url in SOURCES.items():
+    for country, urls in SOURCES.items():
         if country not in reference:
             print(f"[{country}] skipped, not in channels_reference.json")
             continue
         playlist_index = build_playlist_index(reference[country])
-        channel_out, prog_out = process_country(country, url, playlist_index)
+        channel_out, prog_out = process_country(country, urls, playlist_index)
 
         for block in channel_out:
             m = re.search(r'<channel id="([^"]+)">', block)
