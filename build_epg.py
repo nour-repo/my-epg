@@ -65,15 +65,23 @@ def tokenize(name):
 
 
 CALLSIGN_PAREN_RE = re.compile(r'\(([A-Z]{3,5})\)')
+CALLSIGN_PIPE_RE = re.compile(r'\|([A-Z]{3,5})\|')
 CALLSIGN_PREFIX_RE = re.compile(r'^([A-Z]{3,5})\s+\d')
 
 
 def extract_callsign(raw_name):
     """Pulls a US broadcast call sign out of a channel name, e.g.
-    'UNIMAS 17 (KNIC) SAN ANTONIO' -> 'KNIC', or 'KTLA 5 HD (LOS ANGELES)'
-    -> 'KTLA'. Returns None if no confident call sign is found."""
-    name = re.sub(r'\|[A-Z]+\|\s*', '', raw_name).strip()
+    'UNIMAS 17 (KNIC) SAN ANTONIO' -> 'KNIC', 'UNIVISION 23 |WLTV| MIAMI'
+    -> 'WLTV', or 'KTLA 5 HD (LOS ANGELES)' -> 'KTLA'. Returns None if no
+    confident call sign is found."""
+    # Only strip the LEADING country-prefix (e.g. "|US| "), not every
+    # pipe-delimited chunk — a call sign later in the name can look
+    # identical to that prefix pattern and must survive this step.
+    name = re.sub(r'^\|[A-Z]+\|\s*', '', raw_name).strip()
     m = CALLSIGN_PAREN_RE.search(name)
+    if m:
+        return m.group(1)
+    m = CALLSIGN_PIPE_RE.search(name)
     if m:
         return m.group(1)
     m = CALLSIGN_PREFIX_RE.match(name)
