@@ -90,6 +90,17 @@ def extract_callsign(raw_name):
     return None
 
 
+def extract_callsign_from_id(tvg_id):
+    """Fallback: some providers embed the correct call sign directly in
+    the tvg_id even when it's missing from the display name, e.g.
+    tvg_id 'KMEX.us' for a channel named 'UNIVISION 34 HD |LOS ANGELES|'.
+    Returns None if the id prefix doesn't look like a call sign."""
+    prefix = tvg_id.split('.')[0].upper()
+    if re.match(r'^[KW][A-Z]{2,4}$', prefix):
+        return prefix
+    return None
+
+
 def download_epg(url):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=60) as resp:
@@ -287,7 +298,7 @@ def process_country(country, urls, playlist_index):
             # Precompute call signs for what's left unmatched
             remaining_callsigns = {}
             for norm_name, (target, raw_name) in remaining.items():
-                cs = extract_callsign(raw_name)
+                cs = extract_callsign(raw_name) or extract_callsign_from_id(target)
                 if cs:
                     remaining_callsigns.setdefault(cs, []).append(norm_name)
 
