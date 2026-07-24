@@ -101,6 +101,19 @@ def extract_callsign_from_id(tvg_id):
     return None
 
 
+def primary_slash_name(raw_name):
+    """For dual-branded/timeshare channels like 'VERONICA HD / DISNEY XD',
+    returns the normalized first segment ('veronica'), which tends to be
+    the stable anchor name even when the secondary brand differs between
+    sources (e.g. playlist says 'Disney XD', source says 'Disney Jr.').
+    Returns None if there's no slash or the segment is too short/ambiguous."""
+    if '/' not in raw_name:
+        return None
+    first = raw_name.split('/')[0]
+    norm = normalize(first)
+    return norm if len(norm) >= 4 else None
+
+
 def download_epg(url):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=60) as resp:
@@ -322,6 +335,43 @@ def process_country(country, urls, playlist_index):
             if callsign_id_map:
                 programme_out.extend(remap_and_extract_programmes(epg_content, callsign_id_map))
                 print(f"[{country}] {url.rsplit('/', 1)[-1]}: +{len(callsign_id_map)} more via call-sign match "
+                      f"({len(remaining)} still unmatched)")
+
+        # Pass 7 (slash/timeshare fallback): dual-branded channels like
+        # "VERONICA HD / DISNEY XD" — matches on the first (anchor) brand
+        # name, since the secondary brand sometimes differs between
+        # sources for the same physical timeshare channel.
+        if remaining:
+            slash_id_map = {}
+            slash_targets = {}  # primary_norm -> (norm_name, target)
+            for norm_name, (target, raw_name) in remaining.items():
+                primary = primary_slash_name(raw_name)
+                if primary:
+                    slash_targets[primary] = (norm_name, target)
+
+            if slash_targets:
+                for block, epg_id, disp in channels:
+                    if epg_id in id_map or epg_id in slash_id_map:
+                        continue
+                    disp_primary = primary_slash_name(disp)
+                    norm_disp = normalize(disp)
+                    for primary_norm, (norm_name, target) in list(slash_targets.items()):
+                        if target in seen_targets:
+                            continue
+                        # match either: EPG side is also a slash/timeshare
+                        # channel with the same anchor, or the anchor name
+                        # simply appears in the EPG's full normalized name
+                        matched = (disp_primary == primary_norm) or (primary_norm in norm_disp)
+                        if matched:
+                            slash_id_map[epg_id] = target
+                            seen_targets.add(target)
+                            channel_out.append(block.replace(f'id="{epg_id}"', f'id="{target}"', 1))
+                            del remaining[norm_name]
+                            del slash_targets[primary_norm]
+                            break
+            if slash_id_map:
+                programme_out.extend(remap_and_extract_programmes(epg_content, slash_id_map))
+                print(f"[{country}] {url.rsplit('/', 1)[-1]}: +{len(slash_id_map)} more via slash/timeshare match "
                       f"({len(remaining)} still unmatched)")
 
     total_matched = len(playlist_index) - len(remaining)
